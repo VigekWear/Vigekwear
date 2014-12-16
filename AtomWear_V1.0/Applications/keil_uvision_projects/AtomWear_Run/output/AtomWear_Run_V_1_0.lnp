@@ -1,0 +1,5 @@
+--cpu Cortex-M0 ".\output\main.o" ".\output\xprintf.o" ".\output\arm_startup_nrf51.o" ".\output\system_nrf51.o" ".\output\twi_hw_master.o" ".\output\simple_uart.o" ".\output\nrf_delay.o" ".\output\app_timer.o" ".\output\ble_advdata.o" ".\output\ble_conn_params.o" ".\output\ble_debug_assert_handler.o" ".\output\ble_error_log.o" ".\output\ble_flash.o" ".\output\ble_stack_handler.o" ".\output\ble_nus.o" ".\output\ble_srv_common.o" ".\output\ble_startup.o" ".\output\bmp180.o" ".\output\mma8452q.o" ".\output\ak8963.o" ".\output\oled.o" ".\output\step_count.o" ".\output\int_handle.o" ".\output\flash_ctrl.o" ".\output\pwr_ctrl.o" ".\output\system_work_handle.o" ".\output\system_info_storage.o" 
+--strict --scatter ".\output\AtomWear_Run_V_1_0.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\list\AtomWear_Run_V_1_0.map" -o .\output\AtomWear_Run_V_1_0.axf

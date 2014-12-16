@@ -1,0 +1,14 @@
+.\output\nrf_delay.o: Source\nrf_delay\nrf_delay.c
+.\output\nrf_delay.o: C:\Keil\ARM\ARMCC\bin\..\include\stdio.h
+.\output\nrf_delay.o: .\Include\compiler_abstraction.h
+.\output\nrf_delay.o: .\Include\nrf.h
+.\output\nrf_delay.o: .\Include\nrf51.h
+.\output\nrf_delay.o: C:\Keil\ARM\CMSIS\Include\core_cm0.h
+.\output\nrf_delay.o: C:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\output\nrf_delay.o: C:\Keil\ARM\CMSIS\Include\core_cmInstr.h
+.\output\nrf_delay.o: C:\Keil\ARM\CMSIS\Include\core_cmFunc.h
+.\output\nrf_delay.o: .\Include\system_nrf51.h
+.\output\nrf_delay.o: .\Include\nrf51_bitfields.h
+.\output\nrf_delay.o: C:\Keil\ARM\CMSIS\Include\core_cm0.h
+.\output\nrf_delay.o: .\Include\nrf51_deprecated.h
+.\output\nrf_delay.o: .\Include\nrf_delay.h

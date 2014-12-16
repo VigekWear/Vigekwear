@@ -29,7 +29,7 @@
 ### ADS-LD Output File: '.\output\AtomWear_DFU.axf'
 ### ADS-LD Command File: '.\output\AtomWear_DFU.lnp'
 ### Checking for dirty Components...
-### Creating CmdFile '.\output\AtomWear_DFU.lnp', Handle=0x00000280
+### Creating CmdFile '.\output\AtomWear_DFU.lnp', Handle=0x00000464
 ### Writing '.lnp' file
 ### ADS-LD Command file '.\output\AtomWear_DFU.lnp' is ready.
 ### ADS-LD: About to start ADS-LD Thread.

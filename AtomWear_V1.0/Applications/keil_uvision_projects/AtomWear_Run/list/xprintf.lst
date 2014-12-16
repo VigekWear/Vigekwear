@@ -1,0 +1,967 @@
+L 1 "..\..\..\Software\Source\xprintf\xprintf.c"
+N/*------------------------------------------------------------------------/
+N/  Universal string handler for user console interface
+N/-------------------------------------------------------------------------/
+N/
+N/  Copyright (C) 2011, ChaN, all right reserved.
+N/
+N/ * This software is a free software and there is NO WARRANTY.
+N/ * No restriction on use. You can use, modify and redistribute it for
+N/   personal, non-profit or commercial products UNDER YOUR RESPONSIBILITY.
+N/ * Redistributions of source code must retain the above copyright notice.
+N/
+N/-------------------------------------------------------------------------*/
+N
+N#include "xprintf.h"
+L 1 "..\..\..\Software\Include\xprintf.h" 1
+N/*------------------------------------------------------------------------*/
+N/* Universal string handler for user console interface  (C)ChaN, 2011     */
+N/*------------------------------------------------------------------------*/
+N
+N#ifndef _STRFUNC
+N#define _STRFUNC
+N
+N#define _USE_XFUNC_OUT	1	/* 1: Use output functions */
+N#define	_CR_CRLF		0	/* 1: Convert \n ==> \r\n in the output char */
+N
+N#define _USE_XFUNC_IN	0	/* 1: Use input function */
+N#define	_LINE_ECHO		1	/* 1: Echo back input chars in xgets function */
+N
+N
+N#if _USE_XFUNC_OUT
+X#if 1
+N#define xdev_out(func) xfunc_out = (void(*)(unsigned char))(SSD1298_PrintChar)
+Nextern void (*xfunc_out)(unsigned char);
+Nvoid xputc (char c);
+Nvoid xputs (const char* str);
+Nvoid xfputs (void (*func)(unsigned char), const char* str);
+Nvoid xprintf (const char* fmt, ...);
+Nvoid xsprintf (char* buff, const char* fmt, ...);
+Nvoid xfprintf (void (*func)(unsigned char), const char*	fmt, ...);
+Nvoid put_dump (const void* buff, unsigned long addr, int len, int width);
+N#define DW_CHAR		sizeof(char)
+N#define DW_SHORT	sizeof(short)
+N#define DW_LONG		sizeof(long)
+N#endif
+N
+N#if _USE_XFUNC_IN
+X#if 0
+S#define xdev_in(func) xfunc_in = (unsigned char(*)(void))(func)
+Sextern unsigned char (*xfunc_in)(void);
+Sint xgets (char* buff, int len);
+Sint xfgets (unsigned char (*func)(void), char* buff, int len);
+Sint xatoi (char** str, long* res);
+N#endif
+N
+N#endif
+L 15 "..\..\..\Software\Source\xprintf\xprintf.c" 2
+N#include "simple_uart.h"
+L 1 "..\..\..\Software\Include\simple_uart.h" 1
+N /* Copyright (c) 2009 Nordic Semiconductor. All Rights Reserved.
+N *
+N * The information contained herein is property of Nordic Semiconductor ASA.
+N * Terms and conditions of usage are described in detail in NORDIC
+N * SEMICONDUCTOR STANDARD SOFTWARE LICENSE AGREEMENT.
+N *
+N * Licensees are granted free, non-transferable use of the information. NO
+N * WARRANTY of ANY KIND is provided. This heading must NOT be removed from
+N * the file.
+N *
+N */
+N
+N#ifndef SIMPLE_UART_H
+N#define SIMPLE_UART_H
+N
+N/*lint ++flb "Enter library region" */
+N
+N#include <stdbool.h>
+L 1 "C:\Keil\ARM\ARMCC\bin\..\include\stdbool.h" 1
+N/* stdbool.h: ISO/IEC 9899:1999 (C99), section 7.16 */
+N
+N/* Copyright (C) ARM Ltd., 2002
+N * All rights reserved
+N * RCS $Revision: 172039 $
+N * Checkin $Date: 2011-11-02 12:58:12 +0000 (Wed, 02 Nov 2011) $
+N * Revising $Author: drodgman $
+N */
+N
+N#ifndef __bool_true_false_are_defined
+N#define __bool_true_false_are_defined 1
+N#define __ARMCLIB_VERSION 410000
+N
+N  #ifndef __cplusplus /* In C++, 'bool', 'true' and 'false' and keywords */
+N    #define bool _Bool
+N    #define true 1
+N    #define false 0
+N  #else
+S    #ifdef __GNUC__
+S      /* GNU C++ supports direct inclusion of stdbool.h to provide C99
+S         compatibility by defining _Bool */
+S      #define _Bool bool
+S    #endif
+N  #endif
+N
+N#endif /* __bool_true_false_are_defined */
+N
+L 19 "..\..\..\Software\Include\simple_uart.h" 2
+N#include <stdint.h>
+L 1 "C:\Keil\ARM\ARMCC\bin\..\include\stdint.h" 1
+N/* Copyright (C) ARM Ltd., 1999 */
+N/* All rights reserved */
+N
+N/*
+N * RCS $Revision: 172039 $
+N * Checkin $Date: 2011-11-02 12:58:12 +0000 (Wed, 02 Nov 2011) $
+N * Revising $Author: agrant $
+N */
+N
+N#ifndef __stdint_h
+N#define __stdint_h
+N#define __ARMCLIB_VERSION 410000
+N
+N  #ifndef __STDINT_DECLS
+N  #define __STDINT_DECLS
+N
+N    #undef __CLIBNS
+N
+N    #ifdef __cplusplus
+S      namespace std {
+S          #define __CLIBNS std::
+S          extern "C" {
+N    #else
+N      #define __CLIBNS
+N    #endif  /* __cplusplus */
+N
+N
+N/*
+N * 'signed' is redundant below, except for 'signed char' and if
+N * the typedef is used to declare a bitfield.
+N * '__int64' is used instead of 'long long' so that this header
+N * can be used in --strict mode.
+N */
+N
+N    /* 7.18.1.1 */
+N
+N    /* exact-width signed integer types */
+Ntypedef   signed          char int8_t;
+Ntypedef   signed short     int int16_t;
+Ntypedef   signed           int int32_t;
+Ntypedef   signed       __int64 int64_t;
+N
+N    /* exact-width unsigned integer types */
+Ntypedef unsigned          char uint8_t;
+Ntypedef unsigned short     int uint16_t;
+Ntypedef unsigned           int uint32_t;
+Ntypedef unsigned       __int64 uint64_t;
+N
+N    /* 7.18.1.2 */
+N
+N    /* smallest type of at least n bits */
+N    /* minimum-width signed integer types */
+Ntypedef   signed          char int_least8_t;
+Ntypedef   signed short     int int_least16_t;
+Ntypedef   signed           int int_least32_t;
+Ntypedef   signed       __int64 int_least64_t;
+N
+N    /* minimum-width unsigned integer types */
+Ntypedef unsigned          char uint_least8_t;
+Ntypedef unsigned short     int uint_least16_t;
+Ntypedef unsigned           int uint_least32_t;
+Ntypedef unsigned       __int64 uint_least64_t;
+N
+N    /* 7.18.1.3 */
+N
+N    /* fastest minimum-width signed integer types */
+Ntypedef   signed           int int_fast8_t;
+Ntypedef   signed           int int_fast16_t;
+Ntypedef   signed           int int_fast32_t;
+Ntypedef   signed       __int64 int_fast64_t;
+N
+N    /* fastest minimum-width unsigned integer types */
+Ntypedef unsigned           int uint_fast8_t;
+Ntypedef unsigned           int uint_fast16_t;
+Ntypedef unsigned           int uint_fast32_t;
+Ntypedef unsigned       __int64 uint_fast64_t;
+N
+N    /* 7.18.1.4 integer types capable of holding object pointers */
+Ntypedef   signed           int intptr_t;
+Ntypedef unsigned           int uintptr_t;
+N
+N    /* 7.18.1.5 greatest-width integer types */
+Ntypedef   signed       __int64 intmax_t;
+Ntypedef unsigned       __int64 uintmax_t;
+N
+N
+N#if !defined(__cplusplus) || defined(__STDC_LIMIT_MACROS)
+X#if !0L || 0L
+N
+N    /* 7.18.2.1 */
+N
+N    /* minimum values of exact-width signed integer types */
+N#define INT8_MIN                   -128
+N#define INT16_MIN                -32768
+N#define INT32_MIN          (~0x7fffffff)   /* -2147483648 is unsigned */
+N#define INT64_MIN  __ESCAPE__(~0x7fffffffffffffffll) /* -9223372036854775808 is unsigned */
+N
+N    /* maximum values of exact-width signed integer types */
+N#define INT8_MAX                    127
+N#define INT16_MAX                 32767
+N#define INT32_MAX            2147483647
+N#define INT64_MAX  __ESCAPE__(9223372036854775807ll)
+N
+N    /* maximum values of exact-width unsigned integer types */
+N#define UINT8_MAX                   255
+N#define UINT16_MAX                65535
+N#define UINT32_MAX           4294967295u
+N#define UINT64_MAX __ESCAPE__(18446744073709551615ull)
+N
+N    /* 7.18.2.2 */
+N
+N    /* minimum values of minimum-width signed integer types */
+N#define INT_LEAST8_MIN                   -128
+N#define INT_LEAST16_MIN                -32768
+N#define INT_LEAST32_MIN          (~0x7fffffff)
+N#define INT_LEAST64_MIN  __ESCAPE__(~0x7fffffffffffffffll)
+N
+N    /* maximum values of minimum-width signed integer types */
+N#define INT_LEAST8_MAX                    127
+N#define INT_LEAST16_MAX                 32767
+N#define INT_LEAST32_MAX            2147483647
+N#define INT_LEAST64_MAX  __ESCAPE__(9223372036854775807ll)
+N
+N    /* maximum values of minimum-width unsigned integer types */
+N#define UINT_LEAST8_MAX                   255
+N#define UINT_LEAST16_MAX                65535
+N#define UINT_LEAST32_MAX           4294967295u
+N#define UINT_LEAST64_MAX __ESCAPE__(18446744073709551615ull)
+N
+N    /* 7.18.2.3 */
+N
+N    /* minimum values of fastest minimum-width signed integer types */
+N#define INT_FAST8_MIN           (~0x7fffffff)
+N#define INT_FAST16_MIN          (~0x7fffffff)
+N#define INT_FAST32_MIN          (~0x7fffffff)
+N#define INT_FAST64_MIN  __ESCAPE__(~0x7fffffffffffffffll)
+N
+N    /* maximum values of fastest minimum-width signed integer types */
+N#define INT_FAST8_MAX             2147483647
+N#define INT_FAST16_MAX            2147483647
+N#define INT_FAST32_MAX            2147483647
+N#define INT_FAST64_MAX  __ESCAPE__(9223372036854775807ll)
+N
+N    /* maximum values of fastest minimum-width unsigned integer types */
+N#define UINT_FAST8_MAX            4294967295u
+N#define UINT_FAST16_MAX           4294967295u
+N#define UINT_FAST32_MAX           4294967295u
+N#define UINT_FAST64_MAX __ESCAPE__(18446744073709551615ull)
+N
+N    /* 7.18.2.4 */
+N
+N    /* minimum value of pointer-holding signed integer type */
+N#define INTPTR_MIN (~0x7fffffff)
+N
+N    /* maximum value of pointer-holding signed integer type */
+N#define INTPTR_MAX   2147483647
+N
+N    /* maximum value of pointer-holding unsigned integer type */
+N#define UINTPTR_MAX  4294967295u
+N
+N    /* 7.18.2.5 */
+N
+N    /* minimum value of greatest-width signed integer type */
+N#define INTMAX_MIN  __ESCAPE__(~0x7fffffffffffffffll)
+N
+N    /* maximum value of greatest-width signed integer type */
+N#define INTMAX_MAX  __ESCAPE__(9223372036854775807ll)
+N
+N    /* maximum value of greatest-width unsigned integer type */
+N#define UINTMAX_MAX __ESCAPE__(18446744073709551615ull)
+N
+N    /* 7.18.3 */
+N
+N    /* limits of ptrdiff_t */
+N#define PTRDIFF_MIN (~0x7fffffff)
+N#define PTRDIFF_MAX   2147483647
+N
+N    /* limits of sig_atomic_t */
+N#define SIG_ATOMIC_MIN (~0x7fffffff)
+N#define SIG_ATOMIC_MAX   2147483647
+N
+N    /* limit of size_t */
+N#define SIZE_MAX 4294967295u
+N
+N    /* limits of wchar_t */
+N    /* NB we have to undef and redef because they're defined in both
+N     * stdint.h and wchar.h */
+N#undef WCHAR_MIN
+N#undef WCHAR_MAX
+N
+N#if defined(__WCHAR32)
+X#if 0L
+S  #define WCHAR_MIN   0
+S  #define WCHAR_MAX   0xffffffffU
+N#else
+N  #define WCHAR_MIN   0
+N  #define WCHAR_MAX   65535
+N#endif
+N
+N    /* limits of wint_t */
+N#define WINT_MIN (~0x7fffffff)
+N#define WINT_MAX 2147483647
+N
+N#endif /* __STDC_LIMIT_MACROS */
+N
+N#if !defined(__cplusplus) || defined(__STDC_CONSTANT_MACROS)
+X#if !0L || 0L
+N
+N    /* 7.18.4.1 macros for minimum-width integer constants */
+N#define INT8_C(x)   (x)
+N#define INT16_C(x)  (x)
+N#define INT32_C(x)  (x)
+N#define INT64_C(x)  __ESCAPE__(x ## ll)
+N
+N#define UINT8_C(x)  (x ## u)
+N#define UINT16_C(x) (x ## u)
+N#define UINT32_C(x) (x ## u)
+N#define UINT64_C(x) __ESCAPE__(x ## ull)
+N
+N    /* 7.18.4.2 macros for greatest-width integer constants */
+N#define INTMAX_C(x)  __ESCAPE__(x ## ll)
+N#define UINTMAX_C(x) __ESCAPE__(x ## ull)
+N
+N#endif /* __STDC_CONSTANT_MACROS */
+N
+N    #ifdef __cplusplus
+S         }  /* extern "C" */
+S      }  /* namespace std */
+N    #endif /* __cplusplus */
+N  #endif /* __STDINT_DECLS */
+N
+N  #ifdef __cplusplus
+S    #ifndef __STDINT_NO_EXPORTS
+S      using ::std::int8_t;
+S      using ::std::int16_t;
+S      using ::std::int32_t;
+S      using ::std::int64_t;
+S      using ::std::uint8_t;
+S      using ::std::uint16_t;
+S      using ::std::uint32_t;
+S      using ::std::uint64_t;
+S      using ::std::int_least8_t;
+S      using ::std::int_least16_t;
+S      using ::std::int_least32_t;
+S      using ::std::int_least64_t;
+S      using ::std::uint_least8_t;
+S      using ::std::uint_least16_t;
+S      using ::std::uint_least32_t;
+S      using ::std::uint_least64_t;
+S      using ::std::int_fast8_t;
+S      using ::std::int_fast16_t;
+S      using ::std::int_fast32_t;
+S      using ::std::int_fast64_t;
+S      using ::std::uint_fast8_t;
+S      using ::std::uint_fast16_t;
+S      using ::std::uint_fast32_t;
+S      using ::std::uint_fast64_t;
+S      using ::std::intptr_t;
+S      using ::std::uintptr_t;
+S      using ::std::intmax_t;
+S      using ::std::uintmax_t;
+S    #endif 
+N  #endif /* __cplusplus */
+N
+N#endif /* __stdint_h */
+N
+N/* end of stdint.h */
+N
+N
+N
+L 20 "..\..\..\Software\Include\simple_uart.h" 2
+N
+N/** @file
+N* @brief Simple UART driver
+N*
+N*
+N* @defgroup nrf_drivers_simple_uart Simple UART driver
+N* @{
+N* @ingroup nrf_drivers
+N* @brief Simple UART driver
+N*/
+N
+N/** @brief Function for reading a character from UART.
+NExecution is blocked until UART peripheral detects character has been received.
+N\return cr Received character.
+N*/
+Nuint8_t simple_uart_get(void);
+N
+N/** @brief Function for reading a character from UART with timeout on how long to wait for the byte to be received.
+NExecution is blocked until UART peripheral detects character has been received or until the timeout expires, which even occurs first
+N\return bool True, if byte is received before timeout, else returns False.
+N@param timeout_ms maximum time to wait for the data.
+N@param rx_data pointer to the memory where the received data is stored.
+N*/
+Nbool simple_uart_get_with_timeout(int32_t timeout_ms, uint8_t *rx_data);
+X_Bool simple_uart_get_with_timeout(int32_t timeout_ms, uint8_t *rx_data);
+N
+N/** @brief Function for sending a character to UART.
+NExecution is blocked until UART peripheral reports character to have been send.
+N@param cr Character to send.
+N*/
+Nvoid simple_uart_put(uint8_t cr);
+N
+N/** @brief Function for sending a string to UART.
+NExecution is blocked until UART peripheral reports all characters to have been send.
+NMaximum string length is 254 characters including null character in the end.
+N@param str Null terminated string to send.
+N*/
+Nvoid simple_uart_putstring(const uint8_t *str);
+N
+N/** @brief Function for configuring UART to use 38400 baud rate.
+N@param rts_pin_number Chip pin number to be used for UART RTS
+N@param txd_pin_number Chip pin number to be used for UART TXD
+N@param cts_pin_number Chip pin number to be used for UART CTS
+N@param rxd_pin_number Chip pin number to be used for UART RXD
+N@param hwfc Enable hardware flow control
+N*/
+Nvoid simple_uart_config(uint8_t rts_pin_number, uint8_t txd_pin_number, uint8_t cts_pin_number, uint8_t rxd_pin_number, bool hwfc);
+Xvoid simple_uart_config(uint8_t rts_pin_number, uint8_t txd_pin_number, uint8_t cts_pin_number, uint8_t rxd_pin_number, _Bool hwfc);
+N
+N/**
+N *@}
+N **/
+N
+N/*lint --flb "Leave library region" */
+N#endif
+L 16 "..\..\..\Software\Source\xprintf\xprintf.c" 2
+N
+N
+N#if _USE_XFUNC_OUT
+X#if 1
+N#include <stdarg.h>
+L 1 "C:\Keil\ARM\ARMCC\bin\..\include\stdarg.h" 1
+N/* stdarg.h: ANSI 'C' (X3J11 Oct 88) library header, section 4.8 */
+N/* Copyright (C) Codemist Ltd., 1988                            */
+N/* Copyright (C) ARM Ltd., 1991-1999. All rights reserved */
+N
+N/*
+N * RCS $Revision: 172039 $
+N * Checkin $Date: 2011-11-02 12:58:12 +0000 (Wed, 02 Nov 2011) $
+N * Revising $Author: agrant $
+N */
+N
+N#ifndef __stdarg_h
+N#define __stdarg_h
+N#define __ARMCLIB_VERSION 410000
+N
+N  #ifndef __STDARG_DECLS
+N  #define __STDARG_DECLS
+N
+N    #undef __CLIBNS
+N
+N    #ifdef __cplusplus
+S      namespace std {
+S          #define __CLIBNS ::std::
+S          extern "C" {
+N    #else
+N      #define __CLIBNS
+N    #endif  /* __cplusplus */
+N
+N/*
+N * stdarg.h declares a type and defines macros for advancing through a
+N * list of arguments whose number and types are not known to the called
+N * function when it is translated. A function may be called with a variable
+N * number of arguments of differing types. Its parameter list contains one or
+N * more parameters. The rightmost parameter plays a special role in the access
+N * mechanism, and will be called parmN in this description.
+N */
+N
+N/* N.B. <stdio.h> is required to declare vfprintf() without defining      */
+N/* va_list.  Clearly the type __va_list there must keep in step.          */
+N  typedef struct __va_list { void *__ap; } va_list;
+N
+N   /*
+N    * an array type suitable for holding information needed by the macro va_arg
+N    * and the function va_end. The called function shall declare a variable
+N    * (referred to as ap) having type va_list. The variable ap may be passed as
+N    * an argument to another function.
+N    * Note: va_list is an array type so that when an object of that type
+N    * is passed as an argument it gets passed by reference.
+N    */
+N  #define va_start(ap, parmN) __va_start(ap, parmN)
+N
+N   /*
+N    * The va_start macro shall be executed before any access to the unnamed
+N    * arguments. The parameter ap points to an object that has type va_list.
+N    * The va_start macro initialises ap for subsequent use by va_arg and
+N    * va_end. The parameter parmN is the identifier of the rightmost parameter
+N    * in the variable parameter list in the function definition (the one just
+N    * before the '...'). If the parameter parmN is declared with the register
+N    * storage class an error is given.
+N    * If parmN is a narrow type (char, short, float) an error is given in
+N    * strict ANSI mode, or a warning otherwise.
+N    * Returns: no value.
+N    */
+N  #define va_arg(ap, type) __va_arg(ap, type)
+N
+N   /*
+N    * The va_arg macro expands to an expression that has the type and value of
+N    * the next argument in the call. The parameter ap shall be the same as the
+N    * va_list ap initialised by va_start. Each invocation of va_arg modifies
+N    * ap so that successive arguments are returned in turn. The parameter
+N    * 'type' is a type name such that the type of a pointer to an object that
+N    * has the specified type can be obtained simply by postfixing a * to
+N    * 'type'. If type is a narrow type, an error is given in strict ANSI
+N    * mode, or a warning otherwise. If the type is an array or function type,
+N    * an error is given.
+N    * In non-strict ANSI mode, 'type' is allowed to be any expression.
+N    * Returns: The first invocation of the va_arg macro after that of the
+N    *          va_start macro returns the value of the argument after that
+N    *          specified by parmN. Successive invocations return the values of
+N    *          the remaining arguments in succession.
+N    *          The result is cast to 'type', even if 'type' is narrow.
+N    */
+N
+N#define __va_copy(dest, src) ((void)((dest) = (src)))
+N
+N#if !defined(__STRICT_ANSI__) || (defined(__STDC_VERSION__) && 199901L <= __STDC_VERSION__)
+X#if !0L || (1L && 199901L <= 199901L)
+N   /* va_copy is in C99 and non-strict C90 and non-strict C++
+N    * __va_copy is always present.
+N    */
+N  #define va_copy(dest, src) ((void)((dest) = (src)))
+N
+N   /* The va_copy macro makes the va_list dest be a copy of
+N    * the va_list src, as if the va_start macro had been applied
+N    * to it followed by the same sequence of uses of the va_arg
+N    * macro as had previously been used to reach the present state
+N    * of src.
+N    */
+N#endif
+N
+N#define va_end(ap) __va_end(ap)
+N   /*
+N    * The va_end macro facilitates a normal return from the function whose
+N    * variable argument list was referenced by the expansion of va_start that
+N    * initialised the va_list ap. If the va_end macro is not invoked before
+N    * the return, the behaviour is undefined.
+N    * Returns: no value.
+N    */
+N
+N    #ifdef __cplusplus
+S         }  /* extern "C" */
+S      }  /* namespace std */
+N    #endif /* __cplusplus */
+N
+N    #ifdef __GNUC__
+S     /* be cooperative with glibc */
+S     typedef __CLIBNS va_list __gnuc_va_list;
+S     #define __GNUC_VA_LIST
+S     #undef __need___va_list
+N    #endif
+N
+N  #endif /* __STDARG_DECLS */
+N
+N  #ifdef __cplusplus
+S    #ifndef __STDARG_NO_EXPORTS
+S      using ::std::va_list;
+S    #endif
+N  #endif /* __cplusplus */
+N
+N#endif
+N
+N/* end of stdarg.h */
+N
+L 20 "..\..\..\Software\Source\xprintf\xprintf.c" 2
+N
+Nvoid (*xfunc_out)(unsigned char);	/* Pointer to the output stream */
+Nstatic char *outptr;
+N
+N/*----------------------------------------------*/
+N/* Put a character                              */
+N/*----------------------------------------------*/
+N
+Nvoid xputc (char c)
+N{
+N	if (_CR_CRLF && c == '\n') xputc('\r');		/* CR -> CRLF */
+X	if (0 && c == '\n') xputc('\r');		 
+N
+N	if (outptr) {
+N		*outptr++ = (unsigned char)c;
+N		return;
+N	}
+N
+N        //xUARTCharPut(xUART1_BASE, (unsigned char)c);
+N        simple_uart_put( c);
+N	//if (xfunc_out) xfunc_out((unsigned char)c);
+N}
+N
+N
+N
+N/*----------------------------------------------*/
+N/* Put a null-terminated string                 */
+N/*----------------------------------------------*/
+N
+Nvoid xputs (					/* Put a string to the default device */
+N	const char* str				/* Pointer to the string */
+N)
+N{
+N	while (*str)
+N		xputc(*str++);
+N}
+N
+N
+Nvoid xfputs (					/* Put a string to the specified device */
+N	void(*func)(unsigned char),	/* Pointer to the output function */
+N	const char*	str				/* Pointer to the string */
+N)
+N{
+N	void (*pf)(unsigned char);
+N
+N
+N	pf = xfunc_out;		/* Save current output device */
+N	xfunc_out = func;	/* Switch output to specified device */
+N	while (*str)		/* Put the string */
+N		xputc(*str++);
+N	xfunc_out = pf;		/* Restore output device */
+N}
+N
+N
+N
+N/*----------------------------------------------*/
+N/* Formatted string output                      */
+N/*----------------------------------------------*/
+N/*  xprintf("%d", 1234);			"1234"
+N    xprintf("%6d,%3d%%", -200, 5);	"  -200,  5%"
+N    xprintf("%-6u", 100);			"100   "
+N    xprintf("%ld", 12345678L);		"12345678"
+N    xprintf("%04x", 0xA3);			"00a3"
+N    xprintf("%08LX", 0x123ABC);		"00123ABC"
+N    xprintf("%016b", 0x550F);		"0101010100001111"
+N    xprintf("%s", "String");		"String"
+N    xprintf("%-4s", "abc");			"abc "
+N    xprintf("%4s", "abc");			" abc"
+N    xprintf("%c", 'a');				"a"
+N    xprintf("%f", 10.0);            <xprintf lacks floating point support>
+N*/
+N
+Nstatic
+Nvoid xvprintf (
+N	const char*	fmt,	/* Pointer to the format string */
+N	va_list arp			/* Pointer to arguments */
+N)
+N{
+N	unsigned int r, i, j, w, f;
+N	unsigned long v;
+N	char s[16], c, d, *p;
+N
+N
+N	for (;;) {
+N		c = *fmt++;					/* Get a char */
+N		if (!c) break;				/* End of format? */
+N		if (c != '%') {				/* Pass through it if not a % sequense */
+N			xputc(c); continue;
+N		}
+N		f = 0;
+N		c = *fmt++;					/* Get first char of the sequense */
+N		if (c == '0') {				/* Flag: '0' padded */
+N			f = 1; c = *fmt++;
+N		} else {
+N			if (c == '-') {			/* Flag: left justified */
+N				f = 2; c = *fmt++;
+N			}
+N		}
+N		for (w = 0; c >= '0' && c <= '9'; c = *fmt++)	/* Minimum width */
+N			w = w * 10 + c - '0';
+N		if (c == 'l' || c == 'L') {	/* Prefix: Size is long int */
+N			f |= 4; c = *fmt++;
+N		}
+N		if (!c) break;				/* End of format? */
+N		d = c;
+N		if (d >= 'a') d -= 0x20;
+N		switch (d) {				/* Type is... */
+N		case 'S' :					/* String */
+N			p = va_arg(arp, char*);
+X			p = __va_arg(arp, char*);
+N			for (j = 0; p[j]; j++) ;
+N			while (!(f & 2) && j++ < w) xputc(' ');
+N			xputs(p);
+N			while (j++ < w) xputc(' ');
+N			continue;
+N		case 'C' :					/* Character */
+N			xputc((char)va_arg(arp, int)); continue;
+X			xputc((char)__va_arg(arp, int)); continue;
+N		case 'B' :					/* Binary */
+N			r = 2; break;
+N		case 'O' :					/* Octal */
+N			r = 8; break;
+N		case 'D' :					/* Signed decimal */
+N		case 'U' :					/* Unsigned decimal */
+N			r = 10; break;
+N		case 'X' :					/* Hexdecimal */
+N			r = 16; break;
+N		default:					/* Unknown type (passthrough) */
+N			xputc(c); continue;
+N		}
+N
+N		/* Get an argument and put it in numeral */
+N		v = (f & 4) ? va_arg(arp, long) : ((d == 'D') ? (long)va_arg(arp, int) : (long)va_arg(arp, unsigned int));
+X		v = (f & 4) ? __va_arg(arp, long) : ((d == 'D') ? (long)__va_arg(arp, int) : (long)__va_arg(arp, unsigned int));
+N		if (d == 'D' && (v & 0x80000000)) {
+N			v = 0 - v;
+N			f |= 8;
+N		}
+N		i = 0;
+N		do {
+N			d = (char)(v % r); v /= r;
+N			if (d > 9) d += (c == 'x') ? 0x27 : 0x07;
+N			s[i++] = d + '0';
+N		} while (v && i < sizeof(s));
+N		if (f & 8) s[i++] = '-';
+N		j = i; d = (f & 1) ? '0' : ' ';
+N		while (!(f & 2) && j++ < w) xputc(d);
+N		do xputc(s[--i]); while(i);
+N		while (j++ < w) xputc(' ');
+N	}
+N}
+N
+N
+Nvoid xprintf (			/* Put a formatted string to the default device */
+N	const char*	fmt,	/* Pointer to the format string */
+N	...					/* Optional arguments */
+N)
+N{
+N	va_list arp;
+N
+N
+N	va_start(arp, fmt);
+X	__va_start(arp, fmt);
+N	xvprintf(fmt, arp);
+N	va_end(arp);
+X	__va_end(arp);
+N}
+N
+N
+Nvoid xsprintf (			/* Put a formatted string to the memory */
+N	char* buff,			/* Pointer to the output buffer */
+N	const char*	fmt,	/* Pointer to the format string */
+N	...					/* Optional arguments */
+N)
+N{
+N	va_list arp;
+N
+N
+N	outptr = buff;		/* Switch destination for memory */
+N
+N	va_start(arp, fmt);
+X	__va_start(arp, fmt);
+N	xvprintf(fmt, arp);
+N	va_end(arp);
+X	__va_end(arp);
+N
+N	*outptr = 0;		/* Terminate output string with a \0 */
+N	outptr = 0;			/* Switch destination for device */
+N}
+N
+N
+Nvoid xfprintf (					/* Put a formatted string to the specified device */
+N	void(*func)(unsigned char),	/* Pointer to the output function */
+N	const char*	fmt,			/* Pointer to the format string */
+N	...							/* Optional arguments */
+N)
+N{
+N	va_list arp;
+N	void (*pf)(unsigned char);
+N
+N
+N	pf = xfunc_out;		/* Save current output device */
+N	xfunc_out = func;	/* Switch output to specified device */
+N
+N	va_start(arp, fmt);
+X	__va_start(arp, fmt);
+N	xvprintf(fmt, arp);
+N	va_end(arp);
+X	__va_end(arp);
+N
+N	xfunc_out = pf;		/* Restore output device */
+N}
+N
+N
+N
+N/*----------------------------------------------*/
+N/* Dump a line of binary dump                   */
+N/*----------------------------------------------*/
+N
+Nvoid put_dump (
+N	const void* buff,		/* Pointer to the array to be dumped */
+N	unsigned long addr,		/* Heading address value */
+N	int len,				/* Number of items to be dumped */
+N	int width				/* Size of the items (DF_CHAR, DF_SHORT, DF_LONG) */
+N)
+N{
+N	int i;
+N	const unsigned char *bp;
+N	const unsigned short *sp;
+N	const unsigned long *lp;
+N
+N
+N	xprintf("%08lX ", addr);		/* address */
+N
+N	switch (width) {
+N	case DW_CHAR:
+X	case sizeof(char):
+N		bp = buff;
+N		for (i = 0; i < len; i++)		/* Hexdecimal dump */
+N			xprintf(" %02X", bp[i]);
+N		xputc(' ');
+N		for (i = 0; i < len; i++)		/* ASCII dump */
+N			xputc((bp[i] >= ' ' && bp[i] <= '~') ? bp[i] : '.');
+N		break;
+N	case DW_SHORT:
+X	case sizeof(short):
+N		sp = buff;
+N		do								/* Hexdecimal dump */
+N			xprintf(" %04X", *sp++);
+N		while (--len);
+N		break;
+N	case DW_LONG:
+X	case sizeof(long):
+N		lp = buff;
+N		do								/* Hexdecimal dump */
+N			xprintf(" %08LX", *lp++);
+N		while (--len);
+N		break;
+N	}
+N
+N	xputc('\n');
+N}
+N
+N#endif /* _USE_XFUNC_OUT */
+N
+N
+N
+N#if _USE_XFUNC_IN
+X#if 0
+Sunsigned char (*xfunc_in)(void);	/* Pointer to the input stream */
+S
+S/*----------------------------------------------*/
+S/* Get a line from the input                    */
+S/*----------------------------------------------*/
+S
+Sint xgets (		/* 0:End of stream, 1:A line arrived */
+S	char* buff,	/* Pointer to the buffer */
+S	int len		/* Buffer length */
+S)
+S{
+S	int c, i;
+S
+S
+S	if (!xfunc_in) return 0;		/* No input function specified */
+S
+S	i = 0;
+S	for (;;) {
+S		c = xfunc_in();				/* Get a char from the incoming stream */
+S		if (!c) return 0;			/* End of stream? */
+S		if (c == '\r') break;		/* End of line? */
+S		if (c == '\b' && i) {		/* Back space? */
+S			i--;
+S			if (_LINE_ECHO) xputc(c);
+S			continue;
+S		}
+S		if (c >= ' ' && i < len - 1) {	/* Visible chars */
+S			buff[i++] = c;
+S			if (_LINE_ECHO) xputc(c);
+S		}
+S	}
+S	buff[i] = 0;	/* Terminate with a \0 */
+S	if (_LINE_ECHO) xputc('\n');
+S	return 1;
+S}
+S
+S
+Sint xfgets (	/* 0:End of stream, 1:A line arrived */
+S	unsigned char (*func)(void),	/* Pointer to the input stream function */
+S	char* buff,	/* Pointer to the buffer */
+S	int len		/* Buffer length */
+S)
+S{
+S	unsigned char (*pf)(void);
+S	int n;
+S
+S
+S	pf = xfunc_in;			/* Save current input device */
+S	xfunc_in = func;		/* Switch input to specified device */
+S	n = xgets(buff, len);	/* Get a line */
+S	xfunc_in = pf;			/* Restore input device */
+S
+S	return n;
+S}
+S
+S
+S/*----------------------------------------------*/
+S/* Get a value of the string                    */
+S/*----------------------------------------------*/
+S/*	"123 -5   0x3ff 0b1111 0377  w "
+S	    ^                           1st call returns 123 and next ptr
+S	       ^                        2nd call returns -5 and next ptr
+S                   ^                3rd call returns 1023 and next ptr
+S                          ^         4th call returns 15 and next ptr
+S                               ^    5th call returns 255 and next ptr
+S                                  ^ 6th call fails and returns 0
+S*/
+S
+Sint xatoi (			/* 0:Failed, 1:Successful */
+S	char **str,		/* Pointer to pointer to the string */
+S	long *res		/* Pointer to the valiable to store the value */
+S)
+S{
+S	unsigned long val;
+S	unsigned char c, r, s = 0;
+S
+S
+S	*res = 0;
+S
+S	while ((c = **str) == ' ') (*str)++;	/* Skip leading spaces */
+S
+S	if (c == '-') {		/* negative? */
+S		s = 1;
+S		c = *(++(*str));
+S	}
+S
+S	if (c == '0') {
+S		c = *(++(*str));
+S		switch (c) {
+S		case 'x':		/* hexdecimal */
+S			r = 16; c = *(++(*str));
+S			break;
+S		case 'b':		/* binary */
+S			r = 2; c = *(++(*str));
+S			break;
+S		default:
+S			if (c <= ' ') return 1;	/* single zero */
+S			if (c < '0' || c > '9') return 0;	/* invalid char */
+S			r = 8;		/* octal */
+S		}
+S	} else {
+S		if (c < '0' || c > '9') return 0;	/* EOL or invalid char */
+S		r = 10;			/* decimal */
+S	}
+S
+S	val = 0;
+S	while (c > ' ') {
+S		if (c >= 'a') c -= 0x20;
+S		c -= '0';
+S		if (c >= 17) {
+S			c -= 7;
+S			if (c <= 9) return 0;	/* invalid char */
+S		}
+S		if (c >= r) return 0;		/* invalid char for current radix */
+S		val = val * r + c;
+S		c = *(++(*str));
+S	}
+S	if (s) val = 0 - val;			/* apply sign if needed */
+S
+S	*res = val;
+S	return 1;
+S}
+S
+N#endif /* _USE_XFUNC_IN */

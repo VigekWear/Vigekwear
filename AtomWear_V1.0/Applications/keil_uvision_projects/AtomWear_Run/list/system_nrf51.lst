@@ -1,0 +1,447 @@
+L 1 "..\..\..\Software\Source\templates\system_nrf51.c"
+N/* Copyright (c) 2009 Nordic Semiconductor. All Rights Reserved.
+N *
+N * The information contained herein is property of Nordic Semiconductor ASA.
+N * Terms and conditions of usage are described in detail in NORDIC
+N * SEMICONDUCTOR STANDARD SOFTWARE LICENSE AGREEMENT.
+N *
+N * Licensees are granted free, non-transferable use of the information. NO
+N * WARRANTY of ANY KIND is provided. This heading must NOT be removed from
+N * the file.
+N *
+N */
+N
+N
+N
+N/* NOTE: Template files (including this one) are application specific and therefore expected to 
+N   be copied into the application project folder prior to its use! */
+N
+N#include <stdint.h>
+L 1 "C:\Keil\ARM\ARMCC\bin\..\include\stdint.h" 1
+N/* Copyright (C) ARM Ltd., 1999 */
+N/* All rights reserved */
+N
+N/*
+N * RCS $Revision: 172039 $
+N * Checkin $Date: 2011-11-02 12:58:12 +0000 (Wed, 02 Nov 2011) $
+N * Revising $Author: agrant $
+N */
+N
+N#ifndef __stdint_h
+N#define __stdint_h
+N#define __ARMCLIB_VERSION 410000
+N
+N  #ifndef __STDINT_DECLS
+N  #define __STDINT_DECLS
+N
+N    #undef __CLIBNS
+N
+N    #ifdef __cplusplus
+S      namespace std {
+S          #define __CLIBNS std::
+S          extern "C" {
+N    #else
+N      #define __CLIBNS
+N    #endif  /* __cplusplus */
+N
+N
+N/*
+N * 'signed' is redundant below, except for 'signed char' and if
+N * the typedef is used to declare a bitfield.
+N * '__int64' is used instead of 'long long' so that this header
+N * can be used in --strict mode.
+N */
+N
+N    /* 7.18.1.1 */
+N
+N    /* exact-width signed integer types */
+Ntypedef   signed          char int8_t;
+Ntypedef   signed short     int int16_t;
+Ntypedef   signed           int int32_t;
+Ntypedef   signed       __int64 int64_t;
+N
+N    /* exact-width unsigned integer types */
+Ntypedef unsigned          char uint8_t;
+Ntypedef unsigned short     int uint16_t;
+Ntypedef unsigned           int uint32_t;
+Ntypedef unsigned       __int64 uint64_t;
+N
+N    /* 7.18.1.2 */
+N
+N    /* smallest type of at least n bits */
+N    /* minimum-width signed integer types */
+Ntypedef   signed          char int_least8_t;
+Ntypedef   signed short     int int_least16_t;
+Ntypedef   signed           int int_least32_t;
+Ntypedef   signed       __int64 int_least64_t;
+N
+N    /* minimum-width unsigned integer types */
+Ntypedef unsigned          char uint_least8_t;
+Ntypedef unsigned short     int uint_least16_t;
+Ntypedef unsigned           int uint_least32_t;
+Ntypedef unsigned       __int64 uint_least64_t;
+N
+N    /* 7.18.1.3 */
+N
+N    /* fastest minimum-width signed integer types */
+Ntypedef   signed           int int_fast8_t;
+Ntypedef   signed           int int_fast16_t;
+Ntypedef   signed           int int_fast32_t;
+Ntypedef   signed       __int64 int_fast64_t;
+N
+N    /* fastest minimum-width unsigned integer types */
+Ntypedef unsigned           int uint_fast8_t;
+Ntypedef unsigned           int uint_fast16_t;
+Ntypedef unsigned           int uint_fast32_t;
+Ntypedef unsigned       __int64 uint_fast64_t;
+N
+N    /* 7.18.1.4 integer types capable of holding object pointers */
+Ntypedef   signed           int intptr_t;
+Ntypedef unsigned           int uintptr_t;
+N
+N    /* 7.18.1.5 greatest-width integer types */
+Ntypedef   signed       __int64 intmax_t;
+Ntypedef unsigned       __int64 uintmax_t;
+N
+N
+N#if !defined(__cplusplus) || defined(__STDC_LIMIT_MACROS)
+X#if !0L || 0L
+N
+N    /* 7.18.2.1 */
+N
+N    /* minimum values of exact-width signed integer types */
+N#define INT8_MIN                   -128
+N#define INT16_MIN                -32768
+N#define INT32_MIN          (~0x7fffffff)   /* -2147483648 is unsigned */
+N#define INT64_MIN  __ESCAPE__(~0x7fffffffffffffffll) /* -9223372036854775808 is unsigned */
+N
+N    /* maximum values of exact-width signed integer types */
+N#define INT8_MAX                    127
+N#define INT16_MAX                 32767
+N#define INT32_MAX            2147483647
+N#define INT64_MAX  __ESCAPE__(9223372036854775807ll)
+N
+N    /* maximum values of exact-width unsigned integer types */
+N#define UINT8_MAX                   255
+N#define UINT16_MAX                65535
+N#define UINT32_MAX           4294967295u
+N#define UINT64_MAX __ESCAPE__(18446744073709551615ull)
+N
+N    /* 7.18.2.2 */
+N
+N    /* minimum values of minimum-width signed integer types */
+N#define INT_LEAST8_MIN                   -128
+N#define INT_LEAST16_MIN                -32768
+N#define INT_LEAST32_MIN          (~0x7fffffff)
+N#define INT_LEAST64_MIN  __ESCAPE__(~0x7fffffffffffffffll)
+N
+N    /* maximum values of minimum-width signed integer types */
+N#define INT_LEAST8_MAX                    127
+N#define INT_LEAST16_MAX                 32767
+N#define INT_LEAST32_MAX            2147483647
+N#define INT_LEAST64_MAX  __ESCAPE__(9223372036854775807ll)
+N
+N    /* maximum values of minimum-width unsigned integer types */
+N#define UINT_LEAST8_MAX                   255
+N#define UINT_LEAST16_MAX                65535
+N#define UINT_LEAST32_MAX           4294967295u
+N#define UINT_LEAST64_MAX __ESCAPE__(18446744073709551615ull)
+N
+N    /* 7.18.2.3 */
+N
+N    /* minimum values of fastest minimum-width signed integer types */
+N#define INT_FAST8_MIN           (~0x7fffffff)
+N#define INT_FAST16_MIN          (~0x7fffffff)
+N#define INT_FAST32_MIN          (~0x7fffffff)
+N#define INT_FAST64_MIN  __ESCAPE__(~0x7fffffffffffffffll)
+N
+N    /* maximum values of fastest minimum-width signed integer types */
+N#define INT_FAST8_MAX             2147483647
+N#define INT_FAST16_MAX            2147483647
+N#define INT_FAST32_MAX            2147483647
+N#define INT_FAST64_MAX  __ESCAPE__(9223372036854775807ll)
+N
+N    /* maximum values of fastest minimum-width unsigned integer types */
+N#define UINT_FAST8_MAX            4294967295u
+N#define UINT_FAST16_MAX           4294967295u
+N#define UINT_FAST32_MAX           4294967295u
+N#define UINT_FAST64_MAX __ESCAPE__(18446744073709551615ull)
+N
+N    /* 7.18.2.4 */
+N
+N    /* minimum value of pointer-holding signed integer type */
+N#define INTPTR_MIN (~0x7fffffff)
+N
+N    /* maximum value of pointer-holding signed integer type */
+N#define INTPTR_MAX   2147483647
+N
+N    /* maximum value of pointer-holding unsigned integer type */
+N#define UINTPTR_MAX  4294967295u
+N
+N    /* 7.18.2.5 */
+N
+N    /* minimum value of greatest-width signed integer type */
+N#define INTMAX_MIN  __ESCAPE__(~0x7fffffffffffffffll)
+N
+N    /* maximum value of greatest-width signed integer type */
+N#define INTMAX_MAX  __ESCAPE__(9223372036854775807ll)
+N
+N    /* maximum value of greatest-width unsigned integer type */
+N#define UINTMAX_MAX __ESCAPE__(18446744073709551615ull)
+N
+N    /* 7.18.3 */
+N
+N    /* limits of ptrdiff_t */
+N#define PTRDIFF_MIN (~0x7fffffff)
+N#define PTRDIFF_MAX   2147483647
+N
+N    /* limits of sig_atomic_t */
+N#define SIG_ATOMIC_MIN (~0x7fffffff)
+N#define SIG_ATOMIC_MAX   2147483647
+N
+N    /* limit of size_t */
+N#define SIZE_MAX 4294967295u
+N
+N    /* limits of wchar_t */
+N    /* NB we have to undef and redef because they're defined in both
+N     * stdint.h and wchar.h */
+N#undef WCHAR_MIN
+N#undef WCHAR_MAX
+N
+N#if defined(__WCHAR32)
+X#if 0L
+S  #define WCHAR_MIN   0
+S  #define WCHAR_MAX   0xffffffffU
+N#else
+N  #define WCHAR_MIN   0
+N  #define WCHAR_MAX   65535
+N#endif
+N
+N    /* limits of wint_t */
+N#define WINT_MIN (~0x7fffffff)
+N#define WINT_MAX 2147483647
+N
+N#endif /* __STDC_LIMIT_MACROS */
+N
+N#if !defined(__cplusplus) || defined(__STDC_CONSTANT_MACROS)
+X#if !0L || 0L
+N
+N    /* 7.18.4.1 macros for minimum-width integer constants */
+N#define INT8_C(x)   (x)
+N#define INT16_C(x)  (x)
+N#define INT32_C(x)  (x)
+N#define INT64_C(x)  __ESCAPE__(x ## ll)
+N
+N#define UINT8_C(x)  (x ## u)
+N#define UINT16_C(x) (x ## u)
+N#define UINT32_C(x) (x ## u)
+N#define UINT64_C(x) __ESCAPE__(x ## ull)
+N
+N    /* 7.18.4.2 macros for greatest-width integer constants */
+N#define INTMAX_C(x)  __ESCAPE__(x ## ll)
+N#define UINTMAX_C(x) __ESCAPE__(x ## ull)
+N
+N#endif /* __STDC_CONSTANT_MACROS */
+N
+N    #ifdef __cplusplus
+S         }  /* extern "C" */
+S      }  /* namespace std */
+N    #endif /* __cplusplus */
+N  #endif /* __STDINT_DECLS */
+N
+N  #ifdef __cplusplus
+S    #ifndef __STDINT_NO_EXPORTS
+S      using ::std::int8_t;
+S      using ::std::int16_t;
+S      using ::std::int32_t;
+S      using ::std::int64_t;
+S      using ::std::uint8_t;
+S      using ::std::uint16_t;
+S      using ::std::uint32_t;
+S      using ::std::uint64_t;
+S      using ::std::int_least8_t;
+S      using ::std::int_least16_t;
+S      using ::std::int_least32_t;
+S      using ::std::int_least64_t;
+S      using ::std::uint_least8_t;
+S      using ::std::uint_least16_t;
+S      using ::std::uint_least32_t;
+S      using ::std::uint_least64_t;
+S      using ::std::int_fast8_t;
+S      using ::std::int_fast16_t;
+S      using ::std::int_fast32_t;
+S      using ::std::int_fast64_t;
+S      using ::std::uint_fast8_t;
+S      using ::std::uint_fast16_t;
+S      using ::std::uint_fast32_t;
+S      using ::std::uint_fast64_t;
+S      using ::std::intptr_t;
+S      using ::std::uintptr_t;
+S      using ::std::intmax_t;
+S      using ::std::uintmax_t;
+S    #endif 
+N  #endif /* __cplusplus */
+N
+N#endif /* __stdint_h */
+N
+N/* end of stdint.h */
+N
+N
+N
+L 19 "..\..\..\Software\Source\templates\system_nrf51.c" 2
+N#include <stdbool.h>
+L 1 "C:\Keil\ARM\ARMCC\bin\..\include\stdbool.h" 1
+N/* stdbool.h: ISO/IEC 9899:1999 (C99), section 7.16 */
+N
+N/* Copyright (C) ARM Ltd., 2002
+N * All rights reserved
+N * RCS $Revision: 172039 $
+N * Checkin $Date: 2011-11-02 12:58:12 +0000 (Wed, 02 Nov 2011) $
+N * Revising $Author: drodgman $
+N */
+N
+N#ifndef __bool_true_false_are_defined
+N#define __bool_true_false_are_defined 1
+N#define __ARMCLIB_VERSION 410000
+N
+N  #ifndef __cplusplus /* In C++, 'bool', 'true' and 'false' and keywords */
+N    #define bool _Bool
+N    #define true 1
+N    #define false 0
+N  #else
+S    #ifdef __GNUC__
+S      /* GNU C++ supports direct inclusion of stdbool.h to provide C99
+S         compatibility by defining _Bool */
+S      #define _Bool bool
+S    #endif
+N  #endif
+N
+N#endif /* __bool_true_false_are_defined */
+N
+L 20 "..\..\..\Software\Source\templates\system_nrf51.c" 2
+N#include "system_nrf51.h"
+L 1 "..\..\..\Software\Include\system_nrf51.h" 1
+N/* Copyright (c) 2009 Nordic Semiconductor. All Rights Reserved.
+N *
+N * The information contained herein is property of Nordic Semiconductor ASA.
+N * Terms and conditions of usage are described in detail in NORDIC
+N * SEMICONDUCTOR STANDARD SOFTWARE LICENSE AGREEMENT.
+N *
+N * Licensees are granted free, non-transferable use of the information. NO
+N * WARRANTY of ANY KIND is provided. This heading must NOT be removed from
+N * the file.
+N *
+N */
+N
+N
+N#ifndef SYSTEM_NRF51_H
+N#define SYSTEM_NRF51_H
+N
+N#ifdef __cplusplus
+Sextern "C" {
+N#endif
+N
+N#include <stdint.h>
+N
+N
+Nextern uint32_t SystemCoreClock;    /*!< System Clock Frequency (Core Clock)  */
+N
+N/**
+N * Initialize the system
+N *
+N * @param  none
+N * @return none
+N *
+N * @brief  Setup the microcontroller system.
+N *         Initialize the System and update the SystemCoreClock variable.
+N */
+Nextern void SystemInit (void);
+N
+N/**
+N * Update SystemCoreClock variable
+N *
+N * @param  none
+N * @return none
+N *
+N * @brief  Updates the SystemCoreClock with current core Clock 
+N *         retrieved from cpu registers.
+N */
+Nextern void SystemCoreClockUpdate (void);
+N
+N#ifdef __cplusplus
+S}
+N#endif
+N
+N#endif /* SYSTEM_NRF51_H */
+L 21 "..\..\..\Software\Source\templates\system_nrf51.c" 2
+N
+N/*lint ++flb "Enter library region" */
+N
+N
+N#define __SYSTEM_CLOCK      (16000000UL)     /*!< nRF51 devices use a fixed System Clock Frequency of 16MHz */
+N
+Nstatic bool is_manual_peripheral_setup_needed(void);
+Xstatic _Bool is_manual_peripheral_setup_needed(void);
+N
+N
+N#if defined ( __CC_ARM   )
+X#if 1L
+N    uint32_t SystemCoreClock __attribute__((used)) = __SYSTEM_CLOCK;  
+X    uint32_t SystemCoreClock __attribute__((used)) = (16000000UL);  
+N#elif defined ( __ICCARM__ )
+S    __root uint32_t SystemCoreClock = __SYSTEM_CLOCK;
+S#elif defined   (  __GNUC__  )
+S    uint32_t SystemCoreClock __attribute__((used)) = __SYSTEM_CLOCK;
+N#endif
+N
+Nvoid SystemCoreClockUpdate(void)
+N{
+N    SystemCoreClock = __SYSTEM_CLOCK;
+X    SystemCoreClock = (16000000UL);
+N}
+N
+Nvoid SystemInit(void)
+N{
+N    /* If desired, switch off the unused RAM to lower consumption by the use of RAMON register.
+N       It can also be done in the application main() function. */
+N
+N    /* Prepare the peripherals for use as indicated by the PAN 26 "System: Manual setup is required
+N       to enable the use of peripherals" found at Product Anomaly document version 1.6 found at
+N       https://www.nordicsemi.com/eng/Products/Bluetooth-R-low-energy/nRF51822/PAN-028. The side 
+N       effect of executing these instructions in the devices that do not need it is that the new 
+N       peripherals in the second generation devices (LPCOMP for example) will not be available. */
+N    if (is_manual_peripheral_setup_needed())
+N    {
+N        *(uint32_t *)0x40000504 = 0xC007FFDF;
+N        *(uint32_t *)0x40006C18 = 0x00008000;
+N    }
+N}
+N
+N
+Nstatic bool is_manual_peripheral_setup_needed(void) 
+Xstatic _Bool is_manual_peripheral_setup_needed(void) 
+N{
+N    if ((((*(uint32_t *)0xF0000FE0) & 0x000000FF) == 0x1) && (((*(uint32_t *)0xF0000FE4) & 0x0000000F) == 0x0))
+N    {
+N        if ((((*(uint32_t *)0xF0000FE8) & 0x000000F0) == 0x0) && (((*(uint32_t *)0xF0000FEC) & 0x000000F0) == 0x0))
+N        {
+N            return true;
+X            return 1;
+N        }
+N        if ((((*(uint32_t *)0xF0000FE8) & 0x000000F0) == 0x10) && (((*(uint32_t *)0xF0000FEC) & 0x000000F0) == 0x0))
+N        {
+N            return true;
+X            return 1;
+N        }
+N        if ((((*(uint32_t *)0xF0000FE8) & 0x000000F0) == 0x30) && (((*(uint32_t *)0xF0000FEC) & 0x000000F0) == 0x0))
+N        {
+N            return true;
+X            return 1;
+N        }
+N    }
+N    
+N    return false;
+X    return 0;
+N}
+N
+N/*lint --flb "Leave library region" */

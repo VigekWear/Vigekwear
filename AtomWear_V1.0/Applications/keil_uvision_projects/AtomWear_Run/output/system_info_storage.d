@@ -1,0 +1,14 @@
+.\output\system_info_storage.o: ..\..\..\Software\Source\sys_info_storage\system_info_storage.c
+.\output\system_info_storage.o: C:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\output\system_info_storage.o: C:\Keil\ARM\ARMCC\bin\..\include\stdbool.h
+.\output\system_info_storage.o: C:\Keil\ARM\ARMCC\bin\..\include\string.h
+.\output\system_info_storage.o: ..\..\..\Software\Include\system_info_storage.h
+.\output\system_info_storage.o: ..\..\..\Software\Include\flash_ctrl.h
+.\output\system_info_storage.o: ..\..\..\Software\Include\nrf51.h
+.\output\system_info_storage.o: C:\Keil\ARM\CMSIS\Include\core_cm0.h
+.\output\system_info_storage.o: C:\Keil\ARM\CMSIS\Include\core_cmInstr.h
+.\output\system_info_storage.o: C:\Keil\ARM\CMSIS\Include\core_cmFunc.h
+.\output\system_info_storage.o: ..\..\..\Software\Include\system_nrf51.h
+.\output\system_info_storage.o: ..\..\..\Software\Include\nrf51_bitfields.h
+.\output\system_info_storage.o: C:\Keil\ARM\CMSIS\Include\core_cm0.h
+.\output\system_info_storage.o: ..\..\..\Software\Include\xprintf.h

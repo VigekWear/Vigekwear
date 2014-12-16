@@ -9,11 +9,12 @@
 
   <project>
     <PathAndName>.\AtomWear_Run\AtomWear_Run.uvproj</PathAndName>
+    <NodeIsActive>1</NodeIsActive>
+    <NodeIsExpanded>1</NodeIsExpanded>
   </project>
 
   <project>
     <PathAndName>.\AtomWear_DFU\AtomWear_DFU.uvproj</PathAndName>
-    <NodeIsActive>1</NodeIsActive>
   </project>
 
 </ProjectWorkspace>

@@ -1,0 +1,5 @@
+--cpu Cortex-M0 ".\output\main.o" ".\output\xprintf.o" ".\output\arm_startup_nrf51.o" ".\output\system_nrf51.o" ".\output\nrf_delay.o" ".\output\simple_uart.o" ".\output\app_timer.o" ".\output\ble_advdata.o" ".\output\ble_conn_params.o" ".\output\ble_debug_assert_handler.o" ".\output\ble_error_log.o" ".\output\ble_flash.o" ".\output\ble_stack_handler.o" ".\output\ble_nus.o" ".\output\ble_srv_common.o" ".\output\ble_startup.o" ".\output\flash_ctrl.o" ".\output\timer.o" ".\output\dfu_ctrl.o" 
+--strict --scatter ".\output\AtomWear_DFU.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\_build\AtomWear_DFU.map" -o .\output\AtomWear_DFU.axf

@@ -70,6 +70,6 @@ Skype:  giayee
 
 **Headquarters**  
 Addr: Transmission and Distribution Building 1-206/207, Buxin Road #2039, Luohu, Shenzhen, China 518020    
-Website：[http://www.giayee.com.cn/](http://www.giayee.com)    
+Website：[http://www.giayee.com](http://www.giayee.com)    
   
 ----------

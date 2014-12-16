@@ -1,0 +1,16 @@
+.\output\simple_uart.o: Source\simple_uart\simple_uart.c
+.\output\simple_uart.o: C:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\output\simple_uart.o: .\Include\nrf.h
+.\output\simple_uart.o: .\Include\compiler_abstraction.h
+.\output\simple_uart.o: .\Include\nrf51.h
+.\output\simple_uart.o: C:\Keil\ARM\CMSIS\Include\core_cm0.h
+.\output\simple_uart.o: C:\Keil\ARM\CMSIS\Include\core_cmInstr.h
+.\output\simple_uart.o: C:\Keil\ARM\CMSIS\Include\core_cmFunc.h
+.\output\simple_uart.o: .\Include\system_nrf51.h
+.\output\simple_uart.o: .\Include\nrf51_bitfields.h
+.\output\simple_uart.o: C:\Keil\ARM\CMSIS\Include\core_cm0.h
+.\output\simple_uart.o: .\Include\nrf51_deprecated.h
+.\output\simple_uart.o: .\Include\simple_uart.h
+.\output\simple_uart.o: C:\Keil\ARM\ARMCC\bin\..\include\stdbool.h
+.\output\simple_uart.o: .\Include\nrf_delay.h
+.\output\simple_uart.o: .\Include\nrf_gpio.h

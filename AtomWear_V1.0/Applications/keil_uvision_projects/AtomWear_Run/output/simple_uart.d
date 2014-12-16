@@ -1,0 +1,16 @@
+.\output\simple_uart.o: ..\..\..\Software\Source\simple_uart\simple_uart.c
+.\output\simple_uart.o: C:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\output\simple_uart.o: ..\..\..\Software\Include\nrf.h
+.\output\simple_uart.o: ..\..\..\Software\Include\compiler_abstraction.h
+.\output\simple_uart.o: ..\..\..\Software\Include\nrf51.h
+.\output\simple_uart.o: C:\Keil\ARM\CMSIS\Include\core_cm0.h
+.\output\simple_uart.o: C:\Keil\ARM\CMSIS\Include\core_cmInstr.h
+.\output\simple_uart.o: C:\Keil\ARM\CMSIS\Include\core_cmFunc.h
+.\output\simple_uart.o: ..\..\..\Software\Include\system_nrf51.h
+.\output\simple_uart.o: ..\..\..\Software\Include\nrf51_bitfields.h
+.\output\simple_uart.o: C:\Keil\ARM\CMSIS\Include\core_cm0.h
+.\output\simple_uart.o: ..\..\..\Software\Include\nrf51_deprecated.h
+.\output\simple_uart.o: ..\..\..\Software\Include\simple_uart.h
+.\output\simple_uart.o: C:\Keil\ARM\ARMCC\bin\..\include\stdbool.h
+.\output\simple_uart.o: ..\..\..\Software\Include\nrf_delay.h
+.\output\simple_uart.o: ..\..\..\Software\Include\nrf_gpio.h

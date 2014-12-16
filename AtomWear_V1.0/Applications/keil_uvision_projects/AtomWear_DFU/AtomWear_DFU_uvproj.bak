@@ -350,7 +350,7 @@
               <MiscControls>--c99</MiscControls>
               <Define>NRF51 BOARD_PCA10001</Define>
               <Undefine></Undefine>
-              <IncludePath>..\..\..\Software\Include</IncludePath>
+              <IncludePath>.\Include</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -399,12 +399,12 @@
             <File>
               <FileName>xprintf.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\Software\Source\xprintf\xprintf.c</FilePath>
+              <FilePath>.\Source\printf\xprintf.c</FilePath>
             </File>
             <File>
               <FileName>keil_arm_uv4.lnt</FileName>
               <FileType>5</FileType>
-              <FilePath>..\..\..\Software\Source\keil_arm_uv4.lnt</FilePath>
+              <FilePath>.\Source\keil_arm_uv4.lnt</FilePath>
             </File>
           </Files>
         </Group>
@@ -414,22 +414,22 @@
             <File>
               <FileName>arm_startup_nrf51.s</FileName>
               <FileType>2</FileType>
-              <FilePath>..\..\..\Software\Source\templates\arm\arm_startup_nrf51.s</FilePath>
+              <FilePath>.\Source\templates\arm\arm_startup_nrf51.s</FilePath>
             </File>
             <File>
               <FileName>system_nrf51.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\Software\Source\templates\system_nrf51.c</FilePath>
+              <FilePath>.\Source\templates\system_nrf51.c</FilePath>
             </File>
             <File>
               <FileName>nrf_delay.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\Software\Source\nrf_delay\nrf_delay.c</FilePath>
+              <FilePath>.\Source\nrf_delay\nrf_delay.c</FilePath>
             </File>
             <File>
               <FileName>simple_uart.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\Software\Source\simple_uart\simple_uart.c</FilePath>
+              <FilePath>.\Source\simple_uart\simple_uart.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -439,37 +439,37 @@
             <File>
               <FileName>app_timer.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\Software\Source\ble_lib\app_timer.c</FilePath>
+              <FilePath>.\Source\ble_lib\app_timer.c</FilePath>
             </File>
             <File>
               <FileName>ble_advdata.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\Software\Source\ble_lib\ble_advdata.c</FilePath>
+              <FilePath>.\Source\ble_lib\ble_advdata.c</FilePath>
             </File>
             <File>
               <FileName>ble_conn_params.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\Software\Source\ble_lib\ble_conn_params.c</FilePath>
+              <FilePath>.\Source\ble_lib\ble_conn_params.c</FilePath>
             </File>
             <File>
               <FileName>ble_debug_assert_handler.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\Software\Source\ble_lib\ble_debug_assert_handler.c</FilePath>
+              <FilePath>.\Source\ble_lib\ble_debug_assert_handler.c</FilePath>
             </File>
             <File>
               <FileName>ble_error_log.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\Software\Source\ble_lib\ble_error_log.c</FilePath>
+              <FilePath>.\Source\ble_lib\ble_error_log.c</FilePath>
             </File>
             <File>
               <FileName>ble_flash.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\Software\Source\ble_lib\ble_flash.c</FilePath>
+              <FilePath>.\Source\ble_lib\ble_flash.c</FilePath>
             </File>
             <File>
               <FileName>ble_stack_handler.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\Software\Source\ble_lib\ble_stack_handler.c</FilePath>
+              <FilePath>.\Source\ble_lib\ble_stack_handler.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -479,17 +479,17 @@
             <File>
               <FileName>ble_nus.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\Software\Source\ble_serv\ble_nus.c</FilePath>
+              <FilePath>.\Source\ble_serv\ble_nus.c</FilePath>
             </File>
             <File>
               <FileName>ble_srv_common.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\Software\Source\ble_serv\ble_srv_common.c</FilePath>
+              <FilePath>.\Source\ble_serv\ble_srv_common.c</FilePath>
             </File>
             <File>
               <FileName>ble_startup.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\Software\Source\ble_serv\ble_startup.c</FilePath>
+              <FilePath>.\Source\ble_serv\ble_startup.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -497,19 +497,19 @@
           <GroupName>dfu</GroupName>
           <Files>
             <File>
-              <FileName>dfu_ctrl.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\..\Software\Source\dfu_ctrl\dfu_ctrl.c</FilePath>
-            </File>
-            <File>
               <FileName>flash_ctrl.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\Software\Source\dfu_ctrl\flash_ctrl.c</FilePath>
+              <FilePath>.\Source\flash_ctrl\flash_ctrl.c</FilePath>
             </File>
             <File>
               <FileName>timer.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\Software\Source\dfu_ctrl\timer.c</FilePath>
+              <FilePath>.\Source\timer\timer.c</FilePath>
+            </File>
+            <File>
+              <FileName>dfu_ctrl.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Source\dfu_ctrl\dfu_ctrl.c</FilePath>
             </File>
           </Files>
         </Group>

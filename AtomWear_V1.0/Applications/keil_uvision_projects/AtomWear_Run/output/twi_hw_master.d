@@ -1,0 +1,17 @@
+.\output\twi_hw_master.o: ..\..\..\Software\Source\twi_master\twi_hw_master.c
+.\output\twi_hw_master.o: ..\..\..\Software\Include\twi_master.h
+.\output\twi_hw_master.o: C:\Keil\ARM\ARMCC\bin\..\include\stdbool.h
+.\output\twi_hw_master.o: C:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\output\twi_hw_master.o: ..\..\..\Software\Include\nrf.h
+.\output\twi_hw_master.o: ..\..\..\Software\Include\compiler_abstraction.h
+.\output\twi_hw_master.o: ..\..\..\Software\Include\nrf51.h
+.\output\twi_hw_master.o: C:\Keil\ARM\CMSIS\Include\core_cm0.h
+.\output\twi_hw_master.o: C:\Keil\ARM\CMSIS\Include\core_cmInstr.h
+.\output\twi_hw_master.o: C:\Keil\ARM\CMSIS\Include\core_cmFunc.h
+.\output\twi_hw_master.o: ..\..\..\Software\Include\system_nrf51.h
+.\output\twi_hw_master.o: ..\..\..\Software\Include\nrf51_bitfields.h
+.\output\twi_hw_master.o: C:\Keil\ARM\CMSIS\Include\core_cm0.h
+.\output\twi_hw_master.o: ..\..\..\Software\Include\nrf51_deprecated.h
+.\output\twi_hw_master.o: ..\..\..\Software\Include\nrf_delay.h
+.\output\twi_hw_master.o: ..\..\..\Software\Include\nrf_gpio.h
+.\output\twi_hw_master.o: ..\..\..\Software\Include\xprintf.h

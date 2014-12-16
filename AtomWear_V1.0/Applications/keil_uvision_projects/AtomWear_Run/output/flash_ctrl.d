@@ -1,0 +1,17 @@
+.\output\flash_ctrl.o: ..\..\..\Software\Source\sys_work_handle\flash_ctrl.c
+.\output\flash_ctrl.o: C:\Keil\ARM\ARMCC\bin\..\include\stdbool.h
+.\output\flash_ctrl.o: ..\..\..\Software\Include\nrf.h
+.\output\flash_ctrl.o: ..\..\..\Software\Include\compiler_abstraction.h
+.\output\flash_ctrl.o: ..\..\..\Software\Include\nrf51.h
+.\output\flash_ctrl.o: C:\Keil\ARM\CMSIS\Include\core_cm0.h
+.\output\flash_ctrl.o: C:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\output\flash_ctrl.o: C:\Keil\ARM\CMSIS\Include\core_cmInstr.h
+.\output\flash_ctrl.o: C:\Keil\ARM\CMSIS\Include\core_cmFunc.h
+.\output\flash_ctrl.o: ..\..\..\Software\Include\system_nrf51.h
+.\output\flash_ctrl.o: ..\..\..\Software\Include\nrf51_bitfields.h
+.\output\flash_ctrl.o: C:\Keil\ARM\CMSIS\Include\core_cm0.h
+.\output\flash_ctrl.o: ..\..\..\Software\Include\nrf51_deprecated.h
+.\output\flash_ctrl.o: ..\..\..\Software\Include\nrf_gpio.h
+.\output\flash_ctrl.o: ..\..\..\Software\Include\boards.h
+.\output\flash_ctrl.o: ..\..\..\Software\Include\flash_ctrl.h
+.\output\flash_ctrl.o: ..\..\..\Software\Include\xprintf.h
