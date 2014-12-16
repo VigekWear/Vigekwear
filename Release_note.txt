@@ -1,1 +1,13 @@
-There are two versions currently, the latest Atomwear's firmware version is 2.0
+
+/*
+ * Release Note
+ */
+
+	v1.0
+	2014/8/8
+	1. First release
+
+	V2.0
+	2014/12/16
+	1. Use Nordic's official library
+	2. Support more sensors
