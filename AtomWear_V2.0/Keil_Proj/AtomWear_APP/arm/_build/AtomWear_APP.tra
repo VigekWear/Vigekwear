@@ -1,0 +1,50 @@
+*** Creating Trace Output File '.\_build\AtomWear_APP.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '".\_build\arm_startup_nrf51.o"'
+### List of Objects: adding '".\_build\system_nrf51.o"'
+### List of Objects: adding '".\_build\main.o"'
+### List of Objects: adding '".\_build\twi_hw_master.o"'
+### List of Objects: adding '".\_build\xprintf.o"'
+### List of Objects: adding '".\_build\nrf_delay.o"'
+### List of Objects: adding '".\_build\pwr_ctrl.o"'
+### List of Objects: adding '".\_build\ble_dis.o"'
+### List of Objects: adding '".\_build\ble_bas.o"'
+### List of Objects: adding '".\_build\ble_rscs.o"'
+### List of Objects: adding '".\_build\ble_hts.o"'
+### List of Objects: adding '".\_build\bmp180.o"'
+### List of Objects: adding '".\_build\mma8452q.o"'
+### List of Objects: adding '".\_build\ak8963.o"'
+### List of Objects: adding '".\_build\bmi055.o"'
+### List of Objects: adding '".\_build\step_count.o"'
+### List of Objects: adding '".\_build\oled.o"'
+### List of Objects: adding '".\_build\interrupt_hander.o"'
+### List of Objects: adding '".\_build\ble_advdata.o"'
+### List of Objects: adding '".\_build\ble_srv_common.o"'
+### List of Objects: adding '".\_build\ble_sensorsim.o"'
+### List of Objects: adding '".\_build\app_timer.o"'
+### List of Objects: adding '".\_build\softdevice_handler.o"'
+### List of Objects: adding '".\_build\ble_conn_params.o"'
+### List of Objects: adding '".\_build\app_trace.o"'
+### List of Objects: adding '".\_build\simple_uart.o"'
+### List of Objects: adding '".\_build\device_manager_peripheral.o"'
+### List of Objects: adding '".\_build\pstorage.o"'
+### List of Objects: adding '".\_build\crc16.o"'
+### List of Objects: adding '".\_build\ble_error_log.o"'
+### List of Objects: adding '".\_build\ble_debug_assert_handler.o"'
+### ADS-LD Command completed:
+--cpu Cortex-M0 ".\_build\arm_startup_nrf51.o" ".\_build\system_nrf51.o" ".\_build\main.o" ".\_build\twi_hw_master.o" ".\_build\xprintf.o" ".\_build\nrf_delay.o" ".\_build\pwr_ctrl.o" ".\_build\ble_dis.o" ".\_build\ble_bas.o" ".\_build\ble_rscs.o" ".\_build\ble_hts.o" ".\_build\bmp180.o" ".\_build\mma8452q.o" ".\_build\ak8963.o" ".\_build\bmi055.o" ".\_build\step_count.o" ".\_build\oled.o" ".\_build\interrupt_hander.o" ".\_build\ble_advdata.o" ".\_build\ble_srv_common.o" ".\_build\ble_sensorsim.o" ".\_build\app_timer.o" ".\_build\softdevice_handler.o" ".\_build\ble_conn_params.o" ".\_build\app_trace.o" ".\_build\simple_uart.o" ".\_build\device_manager_peripheral.o" ".\_build\pstorage.o" ".\_build\crc16.o" ".\_build\ble_error_log.o" ".\_build\ble_debug_assert_handler.o" 
+--strict --scatter ".\_build\AtomWear_APP.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\_build\AtomWear_APP.map" -o .\_build\AtomWear_APP.axf### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '.\_build\AtomWear_APP.axf'
+### ADS-LD Command File: '.\_build\AtomWear_APP.lnp'
+### Checking for dirty Components...
+### Creating CmdFile '.\_build\AtomWear_APP.lnp', Handle=0x000002F0
+### Writing '.lnp' file
+### ADS-LD Command file '.\_build\AtomWear_APP.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.
