@@ -11,3 +11,7 @@
 	2014/12/16
 	1. Use Nordic's official library
 	2. Support more sensors
+
+	CoIDE
+	2014/12/27
+	1.MCU Programming based on CoIDE. 
