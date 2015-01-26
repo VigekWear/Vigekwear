@@ -1,0 +1,755 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+D:\CooCox\手环\Workspace\AtomWear_V2.1\Keil_Proj\AtomWear_APP\arm\AtomWear_APP.uvproj
+Project File Date:  01/22/2015
+
+<h2>Output:</h2>
+Build target 'AtomWear_APP'
+creating preprocessor file for main.c...
+compiling main.c...
+linking...
+Program Size: Code=45136 RO-data=12832 RW-data=656 ZI-data=5616  
+FromELF: creating hex file...
+".\_build\AtomWear_APP.axf" - 0 Error(s), 0 Warning(s).
+Load "D:\\CooCox\\手环\\Workspace\\AtomWear_V2.1\\Keil_Proj\\AtomWear_APP\\arm\\_build\\AtomWear_APP.AXF" 
+* JLink Info: Device "NRF51822" selected (256 KB flash, 8 KB RAM).
+Set JLink Project File to "D:\CooCox\手环\Workspace\AtomWear_V2.1\Keil_Proj\AtomWear_APP\arm\JLinkSettings.ini"
+* JLink Info: Device "NRF51822" selected (256 KB flash, 8 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.60a, compiled Jan 16 2013 17:15:30
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x0BB11477
+* JLink Info: FPUnit: 4 code (BP) slots and 0 literal slots
+* JLink Info: Found Cortex-M0 r0p0, Little endian.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: nRF51822_xxAA
+VTarget = 3.300V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 4
+Software-Breakpoints: 8192
+Watchpoints:          2
+JTAG speed: 1000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Build target 'AtomWear_APP'
+creating preprocessor file for main.c...
+compiling main.c...
+creating preprocessor file for interrupt_hander.c...
+compiling interrupt_hander.c...
+linking...
+Program Size: Code=45132 RO-data=12836 RW-data=656 ZI-data=5616  
+FromELF: creating hex file...
+".\_build\AtomWear_APP.axf" - 0 Error(s), 0 Warning(s).
+Load "D:\\CooCox\\手环\\Workspace\\AtomWear_V2.1\\Keil_Proj\\AtomWear_APP\\arm\\_build\\AtomWear_APP.AXF" 
+* JLink Info: Device "NRF51822" selected (256 KB flash, 8 KB RAM).
+Set JLink Project File to "D:\CooCox\手环\Workspace\AtomWear_V2.1\Keil_Proj\AtomWear_APP\arm\JLinkSettings.ini"
+* JLink Info: Device "NRF51822" selected (256 KB flash, 8 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.60a, compiled Jan 16 2013 17:15:30
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x0BB11477
+* JLink Info: FPUnit: 4 code (BP) slots and 0 literal slots
+* JLink Info: Found Cortex-M0 r0p0, Little endian.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: nRF51822_xxAA
+VTarget = 3.300V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 4
+Software-Breakpoints: 8192
+Watchpoints:          2
+JTAG speed: 1000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Build target 'AtomWear_APP'
+creating preprocessor file for interrupt_hander.c...
+compiling interrupt_hander.c...
+linking...
+Program Size: Code=45132 RO-data=12836 RW-data=656 ZI-data=5616  
+FromELF: creating hex file...
+".\_build\AtomWear_APP.axf" - 0 Error(s), 0 Warning(s).
+Load "D:\\CooCox\\手环\\Workspace\\AtomWear_V2.1\\Keil_Proj\\AtomWear_APP\\arm\\_build\\AtomWear_APP.AXF" 
+* JLink Info: Device "NRF51822" selected (256 KB flash, 8 KB RAM).
+Set JLink Project File to "D:\CooCox\手环\Workspace\AtomWear_V2.1\Keil_Proj\AtomWear_APP\arm\JLinkSettings.ini"
+* JLink Info: Device "NRF51822" selected (256 KB flash, 8 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.60a, compiled Jan 16 2013 17:15:30
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x0BB11477
+* JLink Info: FPUnit: 4 code (BP) slots and 0 literal slots
+* JLink Info: Found Cortex-M0 r0p0, Little endian.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: nRF51822_xxAA
+VTarget = 3.300V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 4
+Software-Breakpoints: 8192
+Watchpoints:          2
+JTAG speed: 1000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Build target 'AtomWear_APP'
+creating preprocessor file for interrupt_hander.c...
+compiling interrupt_hander.c...
+linking...
+Program Size: Code=45124 RO-data=12836 RW-data=656 ZI-data=5616  
+FromELF: creating hex file...
+".\_build\AtomWear_APP.axf" - 0 Error(s), 0 Warning(s).
+Load "D:\\CooCox\\手环\\Workspace\\AtomWear_V2.1\\Keil_Proj\\AtomWear_APP\\arm\\_build\\AtomWear_APP.AXF" 
+* JLink Info: Device "NRF51822" selected (256 KB flash, 8 KB RAM).
+Set JLink Project File to "D:\CooCox\手环\Workspace\AtomWear_V2.1\Keil_Proj\AtomWear_APP\arm\JLinkSettings.ini"
+* JLink Info: Device "NRF51822" selected (256 KB flash, 8 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.60a, compiled Jan 16 2013 17:15:30
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x0BB11477
+* JLink Info: FPUnit: 4 code (BP) slots and 0 literal slots
+* JLink Info: Found Cortex-M0 r0p0, Little endian.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: nRF51822_xxAA
+VTarget = 3.300V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 4
+Software-Breakpoints: 8192
+Watchpoints:          2
+JTAG speed: 1000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Build target 'AtomWear_APP'
+creating preprocessor file for main.c...
+compiling main.c...
+..\..\..\Include\main.h(22): error:  #20: identifier "uint32" is undefined
+..\main.c(255): error:  #20: identifier "uint32" is undefined
+creating preprocessor file for oled.c...
+compiling oled.c...
+..\..\..\Include\main.h(22): error:  #20: identifier "uint32" is undefined
+creating preprocessor file for interrupt_hander.c...
+compiling interrupt_hander.c...
+..\..\..\Include\main.h(22): error:  #20: identifier "uint32" is undefined
+..\..\..\Source\interrupt_hander\interrupt_hander.c(75): warning:  #1182-D: a declaration cannot have a label
+..\..\..\Source\interrupt_hander\interrupt_hander.c(72): warning:  #546-D: transfer of control bypasses initialization of:
+            variable "sec_count" (declared at line 75)
+                switch(system_work_mode)
+                ^
+..\..\..\Source\interrupt_hander\interrupt_hander.c: 2 warnings, 1 error
+Target not created
+Build target 'AtomWear_APP'
+creating preprocessor file for main.c...
+compiling main.c...
+creating preprocessor file for oled.c...
+compiling oled.c...
+creating preprocessor file for interrupt_hander.c...
+compiling interrupt_hander.c...
+..\..\..\Source\interrupt_hander\interrupt_hander.c(75): warning:  #1182-D: a declaration cannot have a label
+..\..\..\Source\interrupt_hander\interrupt_hander.c(72): warning:  #546-D: transfer of control bypasses initialization of:
+            variable "sec_count" (declared at line 75)
+                switch(system_work_mode)
+                ^
+..\..\..\Source\interrupt_hander\interrupt_hander.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=45212 RO-data=12836 RW-data=656 ZI-data=5616  
+FromELF: creating hex file...
+".\_build\AtomWear_APP.axf" - 0 Error(s), 2 Warning(s).
+Load "D:\\CooCox\\手环\\Workspace\\AtomWear_V2.1\\Keil_Proj\\AtomWear_APP\\arm\\_build\\AtomWear_APP.AXF" 
+* JLink Info: Device "NRF51822" selected (256 KB flash, 8 KB RAM).
+Set JLink Project File to "D:\CooCox\手环\Workspace\AtomWear_V2.1\Keil_Proj\AtomWear_APP\arm\JLinkSettings.ini"
+* JLink Info: Device "NRF51822" selected (256 KB flash, 8 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.60a, compiled Jan 16 2013 17:15:30
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x0BB11477
+* JLink Info: FPUnit: 4 code (BP) slots and 0 literal slots
+* JLink Info: Found Cortex-M0 r0p0, Little endian.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: nRF51822_xxAA
+VTarget = 3.300V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 4
+Software-Breakpoints: 8192
+Watchpoints:          2
+JTAG speed: 1000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Build target 'AtomWear_APP'
+creating preprocessor file for interrupt_hander.c...
+compiling interrupt_hander.c...
+linking...
+Program Size: Code=45212 RO-data=12836 RW-data=656 ZI-data=5616  
+FromELF: creating hex file...
+".\_build\AtomWear_APP.axf" - 0 Error(s), 0 Warning(s).
+Load "D:\\CooCox\\手环\\Workspace\\AtomWear_V2.1\\Keil_Proj\\AtomWear_APP\\arm\\_build\\AtomWear_APP.AXF" 
+* JLink Info: Device "NRF51822" selected (256 KB flash, 8 KB RAM).
+Set JLink Project File to "D:\CooCox\手环\Workspace\AtomWear_V2.1\Keil_Proj\AtomWear_APP\arm\JLinkSettings.ini"
+* JLink Info: Device "NRF51822" selected (256 KB flash, 8 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.60a, compiled Jan 16 2013 17:15:30
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x0BB11477
+* JLink Info: FPUnit: 4 code (BP) slots and 0 literal slots
+* JLink Info: Found Cortex-M0 r0p0, Little endian.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: nRF51822_xxAA
+VTarget = 3.300V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 4
+Software-Breakpoints: 8192
+Watchpoints:          2
+JTAG speed: 1000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Build target 'AtomWear_APP'
+creating preprocessor file for interrupt_hander.c...
+compiling interrupt_hander.c...
+linking...
+Program Size: Code=45220 RO-data=12836 RW-data=656 ZI-data=5616  
+FromELF: creating hex file...
+".\_build\AtomWear_APP.axf" - 0 Error(s), 0 Warning(s).
+Load "D:\\CooCox\\手环\\Workspace\\AtomWear_V2.1\\Keil_Proj\\AtomWear_APP\\arm\\_build\\AtomWear_APP.AXF" 
+* JLink Info: Device "NRF51822" selected (256 KB flash, 8 KB RAM).
+Set JLink Project File to "D:\CooCox\手环\Workspace\AtomWear_V2.1\Keil_Proj\AtomWear_APP\arm\JLinkSettings.ini"
+* JLink Info: Device "NRF51822" selected (256 KB flash, 8 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.60a, compiled Jan 16 2013 17:15:30
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x0BB11477
+* JLink Info: FPUnit: 4 code (BP) slots and 0 literal slots
+* JLink Info: Found Cortex-M0 r0p0, Little endian.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: nRF51822_xxAA
+VTarget = 3.300V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 4
+Software-Breakpoints: 8192
+Watchpoints:          2
+JTAG speed: 1000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Build target 'AtomWear_APP'
+creating preprocessor file for interrupt_hander.c...
+compiling interrupt_hander.c...
+linking...
+Program Size: Code=45220 RO-data=12836 RW-data=656 ZI-data=5616  
+FromELF: creating hex file...
+".\_build\AtomWear_APP.axf" - 0 Error(s), 0 Warning(s).
+Load "D:\\CooCox\\手环\\Workspace\\AtomWear_V2.1\\Keil_Proj\\AtomWear_APP\\arm\\_build\\AtomWear_APP.AXF" 
+* JLink Info: Device "NRF51822" selected (256 KB flash, 8 KB RAM).
+Set JLink Project File to "D:\CooCox\手环\Workspace\AtomWear_V2.1\Keil_Proj\AtomWear_APP\arm\JLinkSettings.ini"
+* JLink Info: Device "NRF51822" selected (256 KB flash, 8 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.60a, compiled Jan 16 2013 17:15:30
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x0BB11477
+* JLink Info: FPUnit: 4 code (BP) slots and 0 literal slots
+* JLink Info: Found Cortex-M0 r0p0, Little endian.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: nRF51822_xxAA
+VTarget = 3.300V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 4
+Software-Breakpoints: 8192
+Watchpoints:          2
+JTAG speed: 1000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Build target 'AtomWear_APP'
+creating preprocessor file for main.c...
+compiling main.c...
+creating preprocessor file for oled.c...
+compiling oled.c...
+..\..\..\Source\OLED\oled.c(498): error:  #20: identifier "time_mode" is undefined
+..\..\..\Source\OLED\oled.c(513): error:  #20: identifier "time_mode" is undefined
+creating preprocessor file for interrupt_hander.c...
+compiling interrupt_hander.c...
+Target not created
+Build target 'AtomWear_APP'
+creating preprocessor file for oled.c...
+compiling oled.c...
+..\..\..\Source\OLED\oled.c(498): warning:  #223-D: function "get_time_mode" declared implicitly
+..\..\..\Source\OLED\oled.c(513): error:  #20: identifier "time_mode" is undefined
+Target not created
+Build target 'AtomWear_APP'
+creating preprocessor file for main.c...
+compiling main.c...
+creating preprocessor file for oled.c...
+compiling oled.c...
+..\..\..\Source\OLED\oled.c(513): error:  #20: identifier "time_mode" is undefined
+creating preprocessor file for interrupt_hander.c...
+compiling interrupt_hander.c...
+Target not created
+Build target 'AtomWear_APP'
+creating preprocessor file for oled.c...
+compiling oled.c...
+linking...
+Program Size: Code=45336 RO-data=12832 RW-data=656 ZI-data=5616  
+FromELF: creating hex file...
+".\_build\AtomWear_APP.axf" - 0 Error(s), 0 Warning(s).
+Load "D:\\CooCox\\手环\\Workspace\\AtomWear_V2.1\\Keil_Proj\\AtomWear_APP\\arm\\_build\\AtomWear_APP.AXF" 
+* JLink Info: Device "NRF51822" selected (256 KB flash, 8 KB RAM).
+Set JLink Project File to "D:\CooCox\手环\Workspace\AtomWear_V2.1\Keil_Proj\AtomWear_APP\arm\JLinkSettings.ini"
+* JLink Info: Device "NRF51822" selected (256 KB flash, 8 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.60a, compiled Jan 16 2013 17:15:30
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x0BB11477
+* JLink Info: FPUnit: 4 code (BP) slots and 0 literal slots
+* JLink Info: Found Cortex-M0 r0p0, Little endian.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: nRF51822_xxAA
+VTarget = 3.300V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 4
+Software-Breakpoints: 8192
+Watchpoints:          2
+JTAG speed: 1000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Build target 'AtomWear_APP'
+creating preprocessor file for oled.c...
+compiling oled.c...
+linking...
+Program Size: Code=45336 RO-data=12832 RW-data=656 ZI-data=5616  
+FromELF: creating hex file...
+".\_build\AtomWear_APP.axf" - 0 Error(s), 0 Warning(s).
+Load "D:\\CooCox\\手环\\Workspace\\AtomWear_V2.1\\Keil_Proj\\AtomWear_APP\\arm\\_build\\AtomWear_APP.AXF" 
+* JLink Info: Device "NRF51822" selected (256 KB flash, 8 KB RAM).
+Set JLink Project File to "D:\CooCox\手环\Workspace\AtomWear_V2.1\Keil_Proj\AtomWear_APP\arm\JLinkSettings.ini"
+* JLink Info: Device "NRF51822" selected (256 KB flash, 8 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.60a, compiled Jan 16 2013 17:15:30
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x0BB11477
+* JLink Info: FPUnit: 4 code (BP) slots and 0 literal slots
+* JLink Info: Found Cortex-M0 r0p0, Little endian.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: nRF51822_xxAA
+VTarget = 3.300V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 4
+Software-Breakpoints: 8192
+Watchpoints:          2
+JTAG speed: 1000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Build target 'AtomWear_APP'
+creating preprocessor file for oled.c...
+compiling oled.c...
+linking...
+Program Size: Code=45336 RO-data=12832 RW-data=656 ZI-data=5616  
+FromELF: creating hex file...
+".\_build\AtomWear_APP.axf" - 0 Error(s), 0 Warning(s).
+Load "D:\\CooCox\\手环\\Workspace\\AtomWear_V2.1\\Keil_Proj\\AtomWear_APP\\arm\\_build\\AtomWear_APP.AXF" 
+* JLink Info: Device "NRF51822" selected (256 KB flash, 8 KB RAM).
+Set JLink Project File to "D:\CooCox\手环\Workspace\AtomWear_V2.1\Keil_Proj\AtomWear_APP\arm\JLinkSettings.ini"
+* JLink Info: Device "NRF51822" selected (256 KB flash, 8 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.60a, compiled Jan 16 2013 17:15:30
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x0BB11477
+* JLink Info: FPUnit: 4 code (BP) slots and 0 literal slots
+* JLink Info: Found Cortex-M0 r0p0, Little endian.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: nRF51822_xxAA
+VTarget = 3.300V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 4
+Software-Breakpoints: 8192
+Watchpoints:          2
+JTAG speed: 1000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Build target 'AtomWear_APP'
+creating preprocessor file for oled.c...
+compiling oled.c...
+linking...
+Program Size: Code=45336 RO-data=12832 RW-data=656 ZI-data=5616  
+FromELF: creating hex file...
+".\_build\AtomWear_APP.axf" - 0 Error(s), 0 Warning(s).
+Load "D:\\CooCox\\手环\\Workspace\\AtomWear_V2.1\\Keil_Proj\\AtomWear_APP\\arm\\_build\\AtomWear_APP.AXF" 
+* JLink Info: Device "NRF51822" selected (256 KB flash, 8 KB RAM).
+Set JLink Project File to "D:\CooCox\手环\Workspace\AtomWear_V2.1\Keil_Proj\AtomWear_APP\arm\JLinkSettings.ini"
+* JLink Info: Device "NRF51822" selected (256 KB flash, 8 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.60a, compiled Jan 16 2013 17:15:30
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x0BB11477
+* JLink Info: FPUnit: 4 code (BP) slots and 0 literal slots
+* JLink Info: Found Cortex-M0 r0p0, Little endian.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: nRF51822_xxAA
+VTarget = 3.300V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 4
+Software-Breakpoints: 8192
+Watchpoints:          2
+JTAG speed: 1000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Build target 'AtomWear_APP'
+creating preprocessor file for oled.c...
+compiling oled.c...
+linking...
+Program Size: Code=45416 RO-data=12832 RW-data=656 ZI-data=5616  
+FromELF: creating hex file...
+".\_build\AtomWear_APP.axf" - 0 Error(s), 0 Warning(s).
+Load "D:\\CooCox\\手环\\Workspace\\AtomWear_V2.1\\Keil_Proj\\AtomWear_APP\\arm\\_build\\AtomWear_APP.AXF" 
+* JLink Info: Device "NRF51822" selected (256 KB flash, 8 KB RAM).
+Set JLink Project File to "D:\CooCox\手环\Workspace\AtomWear_V2.1\Keil_Proj\AtomWear_APP\arm\JLinkSettings.ini"
+* JLink Info: Device "NRF51822" selected (256 KB flash, 8 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.60a, compiled Jan 16 2013 17:15:30
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x0BB11477
+* JLink Info: FPUnit: 4 code (BP) slots and 0 literal slots
+* JLink Info: Found Cortex-M0 r0p0, Little endian.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: nRF51822_xxAA
+VTarget = 3.300V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 4
+Software-Breakpoints: 8192
+Watchpoints:          2
+JTAG speed: 1000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Build target 'AtomWear_APP'
+creating preprocessor file for oled.c...
+compiling oled.c...
+linking...
+Program Size: Code=45416 RO-data=12832 RW-data=656 ZI-data=5616  
+FromELF: creating hex file...
+".\_build\AtomWear_APP.axf" - 0 Error(s), 0 Warning(s).
+Load "D:\\CooCox\\手环\\Workspace\\AtomWear_V2.1\\Keil_Proj\\AtomWear_APP\\arm\\_build\\AtomWear_APP.AXF" 
+* JLink Info: Device "NRF51822" selected (256 KB flash, 8 KB RAM).
+Set JLink Project File to "D:\CooCox\手环\Workspace\AtomWear_V2.1\Keil_Proj\AtomWear_APP\arm\JLinkSettings.ini"
+* JLink Info: Device "NRF51822" selected (256 KB flash, 8 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.60a, compiled Jan 16 2013 17:15:30
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x0BB11477
+* JLink Info: FPUnit: 4 code (BP) slots and 0 literal slots
+* JLink Info: Found Cortex-M0 r0p0, Little endian.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: nRF51822_xxAA
+VTarget = 3.300V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 4
+Software-Breakpoints: 8192
+Watchpoints:          2
+JTAG speed: 1000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Build target 'AtomWear_APP'
+creating preprocessor file for oled.c...
+compiling oled.c...
+linking...
+Program Size: Code=45416 RO-data=12832 RW-data=656 ZI-data=5616  
+FromELF: creating hex file...
+".\_build\AtomWear_APP.axf" - 0 Error(s), 0 Warning(s).
+Load "D:\\CooCox\\手环\\Workspace\\AtomWear_V2.1\\Keil_Proj\\AtomWear_APP\\arm\\_build\\AtomWear_APP.AXF" 
+* JLink Info: Device "NRF51822" selected (256 KB flash, 8 KB RAM).
+Set JLink Project File to "D:\CooCox\手环\Workspace\AtomWear_V2.1\Keil_Proj\AtomWear_APP\arm\JLinkSettings.ini"
+* JLink Info: Device "NRF51822" selected (256 KB flash, 8 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.60a, compiled Jan 16 2013 17:15:30
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x0BB11477
+* JLink Info: FPUnit: 4 code (BP) slots and 0 literal slots
+* JLink Info: Found Cortex-M0 r0p0, Little endian.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: nRF51822_xxAA
+VTarget = 3.300V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 4
+Software-Breakpoints: 8192
+Watchpoints:          2
+JTAG speed: 1000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Build target 'AtomWear_APP'
+creating preprocessor file for oled.c...
+compiling oled.c...
+..\..\..\Source\OLED\oled.c(505): error:  #25: quoted string should contain at least one character
+creating preprocessor file for interrupt_hander.c...
+compiling interrupt_hander.c...
+Target not created
+Build target 'AtomWear_APP'
+creating preprocessor file for oled.c...
+compiling oled.c...
+linking...
+Program Size: Code=45364 RO-data=12836 RW-data=656 ZI-data=5616  
+FromELF: creating hex file...
+".\_build\AtomWear_APP.axf" - 0 Error(s), 0 Warning(s).
+Load "D:\\CooCox\\手环\\Workspace\\AtomWear_V2.1\\Keil_Proj\\AtomWear_APP\\arm\\_build\\AtomWear_APP.AXF" 
+* JLink Info: Device "NRF51822" selected (256 KB flash, 8 KB RAM).
+Set JLink Project File to "D:\CooCox\手环\Workspace\AtomWear_V2.1\Keil_Proj\AtomWear_APP\arm\JLinkSettings.ini"
+* JLink Info: Device "NRF51822" selected (256 KB flash, 8 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.60a, compiled Jan 16 2013 17:15:30
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x0BB11477
+* JLink Info: FPUnit: 4 code (BP) slots and 0 literal slots
+* JLink Info: Found Cortex-M0 r0p0, Little endian.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: nRF51822_xxAA
+VTarget = 3.300V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 4
+Software-Breakpoints: 8192
+Watchpoints:          2
+JTAG speed: 1000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Build target 'AtomWear_APP'
+creating preprocessor file for interrupt_hander.c...
+compiling interrupt_hander.c...
+linking...
+Program Size: Code=45368 RO-data=12832 RW-data=656 ZI-data=5616  
+FromELF: creating hex file...
+".\_build\AtomWear_APP.axf" - 0 Error(s), 0 Warning(s).
+Load "D:\\CooCox\\手环\\Workspace\\AtomWear_V2.1\\Keil_Proj\\AtomWear_APP\\arm\\_build\\AtomWear_APP.AXF" 
+* JLink Info: Device "NRF51822" selected (256 KB flash, 8 KB RAM).
+Set JLink Project File to "D:\CooCox\手环\Workspace\AtomWear_V2.1\Keil_Proj\AtomWear_APP\arm\JLinkSettings.ini"
+* JLink Info: Device "NRF51822" selected (256 KB flash, 8 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.60a, compiled Jan 16 2013 17:15:30
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x0BB11477
+* JLink Info: FPUnit: 4 code (BP) slots and 0 literal slots
+* JLink Info: Found Cortex-M0 r0p0, Little endian.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: nRF51822_xxAA
+VTarget = 3.300V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 4
+Software-Breakpoints: 8192
+Watchpoints:          2
+JTAG speed: 1000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Clean started: Project: 'AtomWear_APP'
+   deleting intermediate output files for target 'AtomWear_APP'
+Clean started: Project: 'AtomWear_APP'
+   deleting intermediate output files for target 'AtomWear_APP'

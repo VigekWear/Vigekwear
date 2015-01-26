@@ -15,3 +15,10 @@
 	CoIDE
 	2014/12/27
 	1.MCU Programming based on CoIDE. 
+	
+	V2.1
+	2015/01/26
+	1.Add time set and display function:
+		When Atomwear is working in the time mode, if you press the button for 2 second, you can set the minute of the time through press the button momently.
+	Then you need to press the button for 2 second to set hour of the time by the same way above the minute.
+	Finally, press the button for 2 second to quit the mode of setting time and enter the pedometer mode.
