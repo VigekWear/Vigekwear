@@ -1,5 +1,0 @@
-"..\..\..\Source\rtc\timer_rtc.c" -E -c --cpu Cortex-M0 --li -O0 --apcs=interwork -I..\..\..\Include -I..\..\..\Include\app_common -I..\..\..\Include\ble -I..\..\..\Include\ble\device_manager -I..\..\..\Include\ble\ble_services -I..\..\..\Include\s110 -I..\..\..\Include\sd_common -I..\..\..\Include\sdk -I..\..\..\Include\sensors -I..\..\..\Include\oled -I..\..\AtomWear_APP --c99 
--I d:\Keil\ARM\RV31\INC 
--I d:\Keil\ARM\CMSIS\Include 
--I d:\Keil\ARM\Device\Nordic\nRF51822\Include 
--DNRF51 -DDEBUG_NRF_USER -DBLE_STACK_SUPPORT_REQD -DBOARD_NRF6310 -o ".\_build\timer_rtc.i"

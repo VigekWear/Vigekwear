@@ -1,5 +1,0 @@
--c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I.\Include --c99 
--I C:\Keil\ARM\RV31\INC 
--I C:\Keil\ARM\CMSIS\Include 
--I C:\Keil\ARM\Device\Nordic\nRF51822\Include 
--DNRF51 -DBOARD_PCA10001 -o ".\output\ble_flash.o" --omf_browse ".\output\ble_flash.crf" --depend ".\output\ble_flash.d" "Source\ble_lib\ble_flash.c"

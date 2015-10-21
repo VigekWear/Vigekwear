@@ -1,685 +1,0 @@
-Dependencies for Project 'AtomWear_Run', Target 'AtomWear_Run': (DO NOT MODIFY !)
-F (.\main.c)(0x53E43E2F)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --asm --interleave --asm_dir ".\\list\\" -I..\..\..\Software\Include --c99 -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Device\Nordic\nRF51822\Include -DNRF51 -DBOARD_PCA10001 -DNRF51_DBG -o ".\output\main.o" --list_dir ".\\list\\" --list --omf_browse ".\output\main.crf" --depend ".\output\main.d")
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdbool.h)(0x4EB0D288)
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x4EB0D284)
-I (..\..\..\Software\Include\nrf_delay.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf.h)(0x53E43E2F)
-I (..\..\..\Software\Include\compiler_abstraction.h)(0x53E43E26)
-I (..\..\..\Software\Include\nrf51.h)(0x53E43E2F)
-I (C:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x50062982)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x50595C8C)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x4FDA945C)
-I (..\..\..\Software\Include\system_nrf51.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf51_bitfields.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf51_deprecated.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf_gpio.h)(0x53E43E2F)
-I (..\..\..\Software\Include\boards.h)(0x53E43E2B)
-I (..\..\..\Software\Include\simple_uart.h)(0x53E43E2F)
-I (..\..\..\Software\Include\xprintf.h)(0x53E43E2F)
-I (..\..\..\Software\Include\system_work_handle.h)(0x53E43E2F)
-I (..\..\..\Software\Include\system_info_storage.h)(0x53E43E2F)
-I (..\..\..\Software\Include\twi_master.h)(0x53E43E2F)
-I (..\..\..\Software\Include\step_count.h)(0x53E43E2F)
-I (..\..\..\Software\Include\pwr_ctrl.h)(0x53E43E2F)
-I (..\..\..\Software\Include\ble_startup.h)(0x53E43E2B)
-I (C:\Keil\ARM\ARMCC\bin\..\include\string.h)(0x4EB0D286)
-I (..\..\..\Software\Include\nordic_common.h)(0x53E43E2F)
-I (..\..\..\Software\Include\app_error.h)(0x53E43E2B)
-I (..\..\..\Software\Include\nrf_error.h)(0x53E43E2F)
-I (..\..\..\Software\Include\ble.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_ranges.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_types.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_gap.h)(0x53E43E2B)
-I (..\..\..\Software\Include\nrf_svc.h)(0x53E43E2F)
-I (..\..\..\Software\Include\ble_l2cap.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_err.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_gatt.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_gattc.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_gatts.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_hci.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_srv_common.h)(0x53E43E2B)
-I (..\..\..\Software\Include\app_util.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_advdata.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_conn_params.h)(0x53E43E2B)
-I (..\..\..\Software\Include\app_scheduler.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_stack_handler.h)(0x53E43E2B)
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdlib.h)(0x4EB0D284)
-I (..\..\..\Software\Include\nrf_sdm.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf_soc.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf_error_soc.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf_error_sdm.h)(0x53E43E2F)
-I (..\..\..\Software\Include\app_timer.h)(0x53E43E2B)
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdio.h)(0x4EB0D286)
-I (..\..\..\Software\Include\ble_error_log.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_nrf6310_pins.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_flash.h)(0x53E43E2B)
-I (..\..\..\Software\Include\app_gpiote.h)(0x53E43E2B)
-I (..\..\..\Software\Include\app_button.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_debug_assert_handler.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_nus.h)(0x53E43E2B)
-I (..\..\..\Software\Include\oled.h)(0x53E43E2F)
-I (..\..\..\Software\Include\bmp180.h)(0x53E43E2B)
-I (..\..\..\Software\Include\mpu6050.h)(0x53E43E2F)
-I (..\..\..\Software\Include\hmc5883l.h)(0x53E43E2F)
-I (..\..\..\Software\Include\mma8452q.h)(0x53E43E2F)
-F (..\..\..\Software\Source\keil_arm_uv4.lnt)(0x53E43E2B)()
-F (..\..\..\Software\Source\xprintf\xprintf.c)(0x53E43E2B)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --asm --interleave --asm_dir ".\\list\\" -I..\..\..\Software\Include --c99 -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Device\Nordic\nRF51822\Include -DNRF51 -DBOARD_PCA10001 -DNRF51_DBG -o ".\output\xprintf.o" --list_dir ".\\list\\" --list --omf_browse ".\output\xprintf.crf" --depend ".\output\xprintf.d")
-I (..\..\..\Software\Include\xprintf.h)(0x53E43E2F)
-I (..\..\..\Software\Include\simple_uart.h)(0x53E43E2F)
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdbool.h)(0x4EB0D288)
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x4EB0D284)
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdarg.h)(0x4EB0D27C)
-F (..\..\..\Software\Source\templates\arm\arm_startup_nrf51.s)(0x53E43E2B)(--cpu Cortex-M0 --li -g --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Device\Nordic\nRF51822\Include --list ".\list\arm_startup_nrf51.lst" --xref -o ".\output\arm_startup_nrf51.o" --depend ".\output\arm_startup_nrf51.d")
-F (..\..\..\Software\Source\templates\system_nrf51.c)(0x53E43E2B)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --asm --interleave --asm_dir ".\\list\\" -I..\..\..\Software\Include --c99 -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Device\Nordic\nRF51822\Include -DNRF51 -DBOARD_PCA10001 -DNRF51_DBG -o ".\output\system_nrf51.o" --list_dir ".\\list\\" --list --omf_browse ".\output\system_nrf51.crf" --depend ".\output\system_nrf51.d")
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x4EB0D284)
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdbool.h)(0x4EB0D288)
-I (..\..\..\Software\Include\system_nrf51.h)(0x53E43E2F)
-F (..\..\..\Software\Source\twi_master\twi_hw_master.c)(0x53E43E2B)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --asm --interleave --asm_dir ".\\list\\" -I..\..\..\Software\Include --c99 -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Device\Nordic\nRF51822\Include -DNRF51 -DBOARD_PCA10001 -DNRF51_DBG -o ".\output\twi_hw_master.o" --list_dir ".\\list\\" --list --omf_browse ".\output\twi_hw_master.crf" --depend ".\output\twi_hw_master.d")
-I (..\..\..\Software\Include\twi_master.h)(0x53E43E2F)
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdbool.h)(0x4EB0D288)
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x4EB0D284)
-I (..\..\..\Software\Include\nrf.h)(0x53E43E2F)
-I (..\..\..\Software\Include\compiler_abstraction.h)(0x53E43E26)
-I (..\..\..\Software\Include\nrf51.h)(0x53E43E2F)
-I (C:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x50062982)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x50595C8C)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x4FDA945C)
-I (..\..\..\Software\Include\system_nrf51.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf51_bitfields.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf51_deprecated.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf_delay.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf_gpio.h)(0x53E43E2F)
-I (..\..\..\Software\Include\xprintf.h)(0x53E43E2F)
-F (..\..\..\Software\Source\simple_uart\simple_uart.c)(0x53E43E2B)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --asm --interleave --asm_dir ".\\list\\" -I..\..\..\Software\Include --c99 -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Device\Nordic\nRF51822\Include -DNRF51 -DBOARD_PCA10001 -DNRF51_DBG -o ".\output\simple_uart.o" --list_dir ".\\list\\" --list --omf_browse ".\output\simple_uart.crf" --depend ".\output\simple_uart.d")
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x4EB0D284)
-I (..\..\..\Software\Include\nrf.h)(0x53E43E2F)
-I (..\..\..\Software\Include\compiler_abstraction.h)(0x53E43E26)
-I (..\..\..\Software\Include\nrf51.h)(0x53E43E2F)
-I (C:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x50062982)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x50595C8C)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x4FDA945C)
-I (..\..\..\Software\Include\system_nrf51.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf51_bitfields.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf51_deprecated.h)(0x53E43E2F)
-I (..\..\..\Software\Include\simple_uart.h)(0x53E43E2F)
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdbool.h)(0x4EB0D288)
-I (..\..\..\Software\Include\nrf_delay.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf_gpio.h)(0x53E43E2F)
-F (..\..\..\Software\Source\nrf_delay\nrf_delay.c)(0x53E43E2B)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --asm --interleave --asm_dir ".\\list\\" -I..\..\..\Software\Include --c99 -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Device\Nordic\nRF51822\Include -DNRF51 -DBOARD_PCA10001 -DNRF51_DBG -o ".\output\nrf_delay.o" --list_dir ".\\list\\" --list --omf_browse ".\output\nrf_delay.crf" --depend ".\output\nrf_delay.d")
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdio.h)(0x4EB0D286)
-I (..\..\..\Software\Include\compiler_abstraction.h)(0x53E43E26)
-I (..\..\..\Software\Include\nrf.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf51.h)(0x53E43E2F)
-I (C:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x50062982)
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x4EB0D284)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x50595C8C)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x4FDA945C)
-I (..\..\..\Software\Include\system_nrf51.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf51_bitfields.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf51_deprecated.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf_delay.h)(0x53E43E2F)
-F (..\..\..\Software\Source\ble_lib\app_timer.c)(0x53E43E2B)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --asm --interleave --asm_dir ".\\list\\" -I..\..\..\Software\Include --c99 -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Device\Nordic\nRF51822\Include -DNRF51 -DBOARD_PCA10001 -DNRF51_DBG -o ".\output\app_timer.o" --list_dir ".\\list\\" --list --omf_browse ".\output\app_timer.crf" --depend ".\output\app_timer.d")
-I (..\..\..\Software\Include\app_timer.h)(0x53E43E2B)
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x4EB0D284)
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdbool.h)(0x4EB0D288)
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdio.h)(0x4EB0D286)
-I (..\..\..\Software\Include\app_error.h)(0x53E43E2B)
-I (..\..\..\Software\Include\nrf_error.h)(0x53E43E2F)
-I (..\..\..\Software\Include\app_util.h)(0x53E43E2B)
-I (..\..\..\Software\Include\compiler_abstraction.h)(0x53E43E26)
-I (..\..\..\Software\Include\nrf51.h)(0x53E43E2F)
-I (C:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x50062982)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x50595C8C)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x4FDA945C)
-I (..\..\..\Software\Include\system_nrf51.h)(0x53E43E2F)
-I (..\..\..\Software\Include\app_scheduler.h)(0x53E43E2B)
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdlib.h)(0x4EB0D284)
-I (..\..\..\Software\Include\nrf51_bitfields.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf_soc.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf_svc.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf_error_soc.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf_delay.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf51_deprecated.h)(0x53E43E2F)
-I (..\..\..\Software\Include\xprintf.h)(0x53E43E2F)
-I (..\..\..\Software\Include\ble_startup.h)(0x53E43E2B)
-I (C:\Keil\ARM\ARMCC\bin\..\include\string.h)(0x4EB0D286)
-I (..\..\..\Software\Include\nordic_common.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf_gpio.h)(0x53E43E2F)
-I (..\..\..\Software\Include\ble.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_ranges.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_types.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_gap.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_l2cap.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_err.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_gatt.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_gattc.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_gatts.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_hci.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_srv_common.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_advdata.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_conn_params.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_stack_handler.h)(0x53E43E2B)
-I (..\..\..\Software\Include\nrf_sdm.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf_error_sdm.h)(0x53E43E2F)
-I (..\..\..\Software\Include\ble_error_log.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_nrf6310_pins.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_flash.h)(0x53E43E2B)
-I (..\..\..\Software\Include\app_gpiote.h)(0x53E43E2B)
-I (..\..\..\Software\Include\app_button.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_debug_assert_handler.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_nus.h)(0x53E43E2B)
-I (..\..\..\Software\Include\boards.h)(0x53E43E2B)
-I (..\..\..\Software\Include\simple_uart.h)(0x53E43E2F)
-I (..\..\..\Software\Include\twi_master.h)(0x53E43E2F)
-I (..\..\..\Software\Include\pwr_ctrl.h)(0x53E43E2F)
-I (..\..\..\Software\Include\system_work_handle.h)(0x53E43E2F)
-I (..\..\..\Software\Include\system_info_storage.h)(0x53E43E2F)
-I (..\..\..\Software\Include\step_count.h)(0x53E43E2F)
-F (..\..\..\Software\Source\ble_lib\ble_advdata.c)(0x53E43E2B)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --asm --interleave --asm_dir ".\\list\\" -I..\..\..\Software\Include --c99 -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Device\Nordic\nRF51822\Include -DNRF51 -DBOARD_PCA10001 -DNRF51_DBG -o ".\output\ble_advdata.o" --list_dir ".\\list\\" --list --omf_browse ".\output\ble_advdata.crf" --depend ".\output\ble_advdata.d")
-I (..\..\..\Software\Include\ble_advdata.h)(0x53E43E2B)
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x4EB0D284)
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdbool.h)(0x4EB0D288)
-I (C:\Keil\ARM\ARMCC\bin\..\include\string.h)(0x4EB0D286)
-I (..\..\..\Software\Include\ble.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_ranges.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_types.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_gap.h)(0x53E43E2B)
-I (..\..\..\Software\Include\nrf_svc.h)(0x53E43E2F)
-I (..\..\..\Software\Include\ble_l2cap.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_err.h)(0x53E43E2B)
-I (..\..\..\Software\Include\nrf_error.h)(0x53E43E2F)
-I (..\..\..\Software\Include\ble_gatt.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_gattc.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_gatts.h)(0x53E43E2B)
-I (..\..\..\Software\Include\app_util.h)(0x53E43E2B)
-I (..\..\..\Software\Include\compiler_abstraction.h)(0x53E43E26)
-I (..\..\..\Software\Include\nrf51.h)(0x53E43E2F)
-I (C:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x50062982)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x50595C8C)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x4FDA945C)
-I (..\..\..\Software\Include\system_nrf51.h)(0x53E43E2F)
-I (..\..\..\Software\Include\app_error.h)(0x53E43E2B)
-I (..\..\..\Software\Include\nordic_common.h)(0x53E43E2F)
-I (..\..\..\Software\Include\ble_srv_common.h)(0x53E43E2B)
-F (..\..\..\Software\Source\ble_lib\ble_conn_params.c)(0x53E43E2B)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --asm --interleave --asm_dir ".\\list\\" -I..\..\..\Software\Include --c99 -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Device\Nordic\nRF51822\Include -DNRF51 -DBOARD_PCA10001 -DNRF51_DBG -o ".\output\ble_conn_params.o" --list_dir ".\\list\\" --list --omf_browse ".\output\ble_conn_params.crf" --depend ".\output\ble_conn_params.d")
-I (..\..\..\Software\Include\ble_conn_params.h)(0x53E43E2B)
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x4EB0D284)
-I (..\..\..\Software\Include\ble.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_ranges.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_types.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_gap.h)(0x53E43E2B)
-I (..\..\..\Software\Include\nrf_svc.h)(0x53E43E2F)
-I (..\..\..\Software\Include\ble_l2cap.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_err.h)(0x53E43E2B)
-I (..\..\..\Software\Include\nrf_error.h)(0x53E43E2F)
-I (..\..\..\Software\Include\ble_gatt.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_gattc.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_gatts.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_srv_common.h)(0x53E43E2B)
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdbool.h)(0x4EB0D288)
-I (..\..\..\Software\Include\app_util.h)(0x53E43E2B)
-I (..\..\..\Software\Include\compiler_abstraction.h)(0x53E43E26)
-I (..\..\..\Software\Include\nrf51.h)(0x53E43E2F)
-I (C:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x50062982)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x50595C8C)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x4FDA945C)
-I (..\..\..\Software\Include\system_nrf51.h)(0x53E43E2F)
-I (..\..\..\Software\Include\app_error.h)(0x53E43E2B)
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdlib.h)(0x4EB0D284)
-I (..\..\..\Software\Include\nordic_common.h)(0x53E43E2F)
-I (..\..\..\Software\Include\ble_hci.h)(0x53E43E2B)
-I (..\..\..\Software\Include\app_timer.h)(0x53E43E2B)
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdio.h)(0x4EB0D286)
-I (..\..\..\Software\Include\app_scheduler.h)(0x53E43E2B)
-F (..\..\..\Software\Source\ble_lib\ble_debug_assert_handler.c)(0x53E43E2B)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --asm --interleave --asm_dir ".\\list\\" -I..\..\..\Software\Include --c99 -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Device\Nordic\nRF51822\Include -DNRF51 -DBOARD_PCA10001 -DNRF51_DBG -o ".\output\ble_debug_assert_handler.o" --list_dir ".\\list\\" --list --omf_browse ".\output\ble_debug_assert_handler.crf" --depend ".\output\ble_debug_assert_handler.d")
-I (..\..\..\Software\Include\ble_debug_assert_handler.h)(0x53E43E2B)
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x4EB0D284)
-I (C:\Keil\ARM\ARMCC\bin\..\include\string.h)(0x4EB0D286)
-I (..\..\..\Software\Include\nrf51.h)(0x53E43E2F)
-I (C:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x50062982)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x50595C8C)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x4FDA945C)
-I (..\..\..\Software\Include\system_nrf51.h)(0x53E43E2F)
-I (..\..\..\Software\Include\ble_error_log.h)(0x53E43E2B)
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdbool.h)(0x4EB0D288)
-I (..\..\..\Software\Include\ble_nrf6310_pins.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_flash.h)(0x53E43E2B)
-I (..\..\..\Software\Include\nordic_common.h)(0x53E43E2F)
-F (..\..\..\Software\Source\ble_lib\ble_error_log.c)(0x53E43E2B)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --asm --interleave --asm_dir ".\\list\\" -I..\..\..\Software\Include --c99 -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Device\Nordic\nRF51822\Include -DNRF51 -DBOARD_PCA10001 -DNRF51_DBG -o ".\output\ble_error_log.o" --list_dir ".\\list\\" --list --omf_browse ".\output\ble_error_log.crf" --depend ".\output\ble_error_log.d")
-I (C:\Keil\ARM\ARMCC\bin\..\include\string.h)(0x4EB0D286)
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x4EB0D284)
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdbool.h)(0x4EB0D288)
-I (..\..\..\Software\Include\nrf51.h)(0x53E43E2F)
-I (C:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x50062982)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x50595C8C)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x4FDA945C)
-I (..\..\..\Software\Include\system_nrf51.h)(0x53E43E2F)
-I (..\..\..\Software\Include\ble_error_log.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_nrf6310_pins.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_flash.h)(0x53E43E2B)
-I (..\..\..\Software\Include\app_util.h)(0x53E43E2B)
-I (..\..\..\Software\Include\compiler_abstraction.h)(0x53E43E26)
-I (..\..\..\Software\Include\app_error.h)(0x53E43E2B)
-I (..\..\..\Software\Include\nrf_error.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf_gpio.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf51_bitfields.h)(0x53E43E2F)
-F (..\..\..\Software\Source\ble_lib\ble_flash.c)(0x53E43E2B)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --asm --interleave --asm_dir ".\\list\\" -I..\..\..\Software\Include --c99 -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Device\Nordic\nRF51822\Include -DNRF51 -DBOARD_PCA10001 -DNRF51_DBG -o ".\output\ble_flash.o" --list_dir ".\\list\\" --list --omf_browse ".\output\ble_flash.crf" --depend ".\output\ble_flash.d")
-I (..\..\..\Software\Include\ble_flash.h)(0x53E43E2B)
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x4EB0D284)
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdbool.h)(0x4EB0D288)
-I (..\..\..\Software\Include\nrf51.h)(0x53E43E2F)
-I (C:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x50062982)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x50595C8C)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x4FDA945C)
-I (..\..\..\Software\Include\system_nrf51.h)(0x53E43E2F)
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdlib.h)(0x4EB0D284)
-I (C:\Keil\ARM\ARMCC\bin\..\include\string.h)(0x4EB0D286)
-I (..\..\..\Software\Include\nrf_soc.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf_svc.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf51_bitfields.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf_error_soc.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf_error.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nordic_common.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf.h)(0x53E43E2F)
-I (..\..\..\Software\Include\compiler_abstraction.h)(0x53E43E26)
-I (..\..\..\Software\Include\nrf51_deprecated.h)(0x53E43E2F)
-I (..\..\..\Software\Include\app_util.h)(0x53E43E2B)
-I (..\..\..\Software\Include\app_error.h)(0x53E43E2B)
-F (..\..\..\Software\Source\ble_lib\ble_stack_handler.c)(0x53E43E2B)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --asm --interleave --asm_dir ".\\list\\" -I..\..\..\Software\Include --c99 -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Device\Nordic\nRF51822\Include -DNRF51 -DBOARD_PCA10001 -DNRF51_DBG -o ".\output\ble_stack_handler.o" --list_dir ".\\list\\" --list --omf_browse ".\output\ble_stack_handler.crf" --depend ".\output\ble_stack_handler.d")
-I (..\..\..\Software\Include\ble_stack_handler.h)(0x53E43E2B)
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdlib.h)(0x4EB0D284)
-I (..\..\..\Software\Include\ble.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_ranges.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_types.h)(0x53E43E2B)
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x4EB0D284)
-I (..\..\..\Software\Include\ble_gap.h)(0x53E43E2B)
-I (..\..\..\Software\Include\nrf_svc.h)(0x53E43E2F)
-I (..\..\..\Software\Include\ble_l2cap.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_err.h)(0x53E43E2B)
-I (..\..\..\Software\Include\nrf_error.h)(0x53E43E2F)
-I (..\..\..\Software\Include\ble_gatt.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_gattc.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_gatts.h)(0x53E43E2B)
-I (..\..\..\Software\Include\nrf51.h)(0x53E43E2F)
-I (C:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x50062982)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x50595C8C)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x4FDA945C)
-I (..\..\..\Software\Include\system_nrf51.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf_sdm.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf_soc.h)(0x53E43E2F)
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdbool.h)(0x4EB0D288)
-I (..\..\..\Software\Include\nrf51_bitfields.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf_error_soc.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf_error_sdm.h)(0x53E43E2F)
-I (..\..\..\Software\Include\app_error.h)(0x53E43E2B)
-I (..\..\..\Software\Include\app_scheduler.h)(0x53E43E2B)
-I (..\..\..\Software\Include\app_util.h)(0x53E43E2B)
-I (..\..\..\Software\Include\compiler_abstraction.h)(0x53E43E26)
-I (..\..\..\Software\Include\nordic_common.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf_assert.h)(0x53E43E2F)
-F (..\..\..\Software\Source\ble_serv\ble_nus.c)(0x53E43E2B)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --asm --interleave --asm_dir ".\\list\\" -I..\..\..\Software\Include --c99 -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Device\Nordic\nRF51822\Include -DNRF51 -DBOARD_PCA10001 -DNRF51_DBG -o ".\output\ble_nus.o" --list_dir ".\\list\\" --list --omf_browse ".\output\ble_nus.crf" --depend ".\output\ble_nus.d")
-I (..\..\..\Software\Include\ble_nus.h)(0x53E43E2B)
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x4EB0D284)
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdbool.h)(0x4EB0D288)
-I (..\..\..\Software\Include\ble.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_ranges.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_types.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_gap.h)(0x53E43E2B)
-I (..\..\..\Software\Include\nrf_svc.h)(0x53E43E2F)
-I (..\..\..\Software\Include\ble_l2cap.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_err.h)(0x53E43E2B)
-I (..\..\..\Software\Include\nrf_error.h)(0x53E43E2F)
-I (..\..\..\Software\Include\ble_gatt.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_gattc.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_gatts.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_srv_common.h)(0x53E43E2B)
-I (..\..\..\Software\Include\app_util.h)(0x53E43E2B)
-I (..\..\..\Software\Include\compiler_abstraction.h)(0x53E43E26)
-I (..\..\..\Software\Include\nrf51.h)(0x53E43E2F)
-I (C:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x50062982)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x50595C8C)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x4FDA945C)
-I (..\..\..\Software\Include\system_nrf51.h)(0x53E43E2F)
-I (..\..\..\Software\Include\app_error.h)(0x53E43E2B)
-I (C:\Keil\ARM\ARMCC\bin\..\include\string.h)(0x4EB0D286)
-I (..\..\..\Software\Include\nordic_common.h)(0x53E43E2F)
-F (..\..\..\Software\Source\ble_serv\ble_srv_common.c)(0x53E43E2B)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --asm --interleave --asm_dir ".\\list\\" -I..\..\..\Software\Include --c99 -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Device\Nordic\nRF51822\Include -DNRF51 -DBOARD_PCA10001 -DNRF51_DBG -o ".\output\ble_srv_common.o" --list_dir ".\\list\\" --list --omf_browse ".\output\ble_srv_common.crf" --depend ".\output\ble_srv_common.d")
-I (..\..\..\Software\Include\ble_srv_common.h)(0x53E43E2B)
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x4EB0D284)
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdbool.h)(0x4EB0D288)
-I (..\..\..\Software\Include\ble_types.h)(0x53E43E2B)
-I (..\..\..\Software\Include\app_util.h)(0x53E43E2B)
-I (..\..\..\Software\Include\compiler_abstraction.h)(0x53E43E26)
-I (..\..\..\Software\Include\nrf51.h)(0x53E43E2F)
-I (C:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x50062982)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x50595C8C)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x4FDA945C)
-I (..\..\..\Software\Include\system_nrf51.h)(0x53E43E2F)
-I (..\..\..\Software\Include\app_error.h)(0x53E43E2B)
-I (..\..\..\Software\Include\nrf_error.h)(0x53E43E2F)
-I (..\..\..\Software\Include\ble_gap.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_ranges.h)(0x53E43E2B)
-I (..\..\..\Software\Include\nrf_svc.h)(0x53E43E2F)
-I (C:\Keil\ARM\ARMCC\bin\..\include\string.h)(0x4EB0D286)
-I (..\..\..\Software\Include\nordic_common.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf_assert.h)(0x53E43E2F)
-F (..\..\..\Software\Source\ble_serv\ble_startup.c)(0x53E43E2B)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --asm --interleave --asm_dir ".\\list\\" -I..\..\..\Software\Include --c99 -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Device\Nordic\nRF51822\Include -DNRF51 -DBOARD_PCA10001 -DNRF51_DBG -o ".\output\ble_startup.o" --list_dir ".\\list\\" --list --omf_browse ".\output\ble_startup.crf" --depend ".\output\ble_startup.d")
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x4EB0D284)
-I (C:\Keil\ARM\ARMCC\bin\..\include\string.h)(0x4EB0D286)
-I (..\..\..\Software\Include\nordic_common.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf.h)(0x53E43E2F)
-I (..\..\..\Software\Include\compiler_abstraction.h)(0x53E43E26)
-I (..\..\..\Software\Include\nrf51.h)(0x53E43E2F)
-I (C:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x50062982)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x50595C8C)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x4FDA945C)
-I (..\..\..\Software\Include\system_nrf51.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf51_bitfields.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf51_deprecated.h)(0x53E43E2F)
-I (..\..\..\Software\Include\app_error.h)(0x53E43E2B)
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdbool.h)(0x4EB0D288)
-I (..\..\..\Software\Include\nrf_error.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf_gpio.h)(0x53E43E2F)
-I (..\..\..\Software\Include\ble.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_ranges.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_types.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_gap.h)(0x53E43E2B)
-I (..\..\..\Software\Include\nrf_svc.h)(0x53E43E2F)
-I (..\..\..\Software\Include\ble_l2cap.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_err.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_gatt.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_gattc.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_gatts.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_hci.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_srv_common.h)(0x53E43E2B)
-I (..\..\..\Software\Include\app_util.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_advdata.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_conn_params.h)(0x53E43E2B)
-I (..\..\..\Software\Include\app_scheduler.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_stack_handler.h)(0x53E43E2B)
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdlib.h)(0x4EB0D284)
-I (..\..\..\Software\Include\nrf_sdm.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf_soc.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf_error_soc.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf_error_sdm.h)(0x53E43E2F)
-I (..\..\..\Software\Include\app_timer.h)(0x53E43E2B)
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdio.h)(0x4EB0D286)
-I (..\..\..\Software\Include\ble_error_log.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_nrf6310_pins.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_flash.h)(0x53E43E2B)
-I (..\..\..\Software\Include\app_gpiote.h)(0x53E43E2B)
-I (..\..\..\Software\Include\app_button.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_debug_assert_handler.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_nus.h)(0x53E43E2B)
-I (..\..\..\Software\Include\boards.h)(0x53E43E2B)
-I (..\..\..\Software\Include\nrf_delay.h)(0x53E43E2F)
-I (..\..\..\Software\Include\simple_uart.h)(0x53E43E2F)
-I (..\..\..\Software\Include\twi_master.h)(0x53E43E2F)
-I (..\..\..\Software\Include\xprintf.h)(0x53E43E2F)
-I (..\..\..\Software\Include\ble_startup.h)(0x53E43E2B)
-I (..\..\..\Software\Include\pwr_ctrl.h)(0x53E43E2F)
-I (..\..\..\Software\Include\system_work_handle.h)(0x53E43E2F)
-I (..\..\..\Software\Include\system_info_storage.h)(0x53E43E2F)
-I (..\..\..\Software\Include\step_count.h)(0x53E43E2F)
-I (..\..\..\Software\Include\flash_ctrl.h)(0x53E43E27)
-F (..\..\..\Software\Source\bmp180\bmp180.c)(0x53E43E2B)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --asm --interleave --asm_dir ".\\list\\" -I..\..\..\Software\Include --c99 -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Device\Nordic\nRF51822\Include -DNRF51 -DBOARD_PCA10001 -DNRF51_DBG -o ".\output\bmp180.o" --list_dir ".\\list\\" --list --omf_browse ".\output\bmp180.crf" --depend ".\output\bmp180.d")
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x4EB0D284)
-I (..\..\..\Software\Include\twi_master.h)(0x53E43E2F)
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdbool.h)(0x4EB0D288)
-I (..\..\..\Software\Include\nrf_delay.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf.h)(0x53E43E2F)
-I (..\..\..\Software\Include\compiler_abstraction.h)(0x53E43E26)
-I (..\..\..\Software\Include\nrf51.h)(0x53E43E2F)
-I (C:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x50062982)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x50595C8C)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x4FDA945C)
-I (..\..\..\Software\Include\system_nrf51.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf51_bitfields.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf51_deprecated.h)(0x53E43E2F)
-I (..\..\..\Software\Include\xprintf.h)(0x53E43E2F)
-I (..\..\..\Software\Include\bmp180.h)(0x53E43E2B)
-I (C:\Keil\ARM\ARMCC\bin\..\include\math.h)(0x4EB0D288)
-F (..\..\..\Software\Source\mma8452q\mma8452q.c)(0x53E43E2B)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --asm --interleave --asm_dir ".\\list\\" -I..\..\..\Software\Include --c99 -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Device\Nordic\nRF51822\Include -DNRF51 -DBOARD_PCA10001 -DNRF51_DBG -o ".\output\mma8452q.o" --list_dir ".\\list\\" --list --omf_browse ".\output\mma8452q.crf" --depend ".\output\mma8452q.d")
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x4EB0D284)
-I (..\..\..\Software\Include\twi_master.h)(0x53E43E2F)
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdbool.h)(0x4EB0D288)
-I (..\..\..\Software\Include\nrf_delay.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf.h)(0x53E43E2F)
-I (..\..\..\Software\Include\compiler_abstraction.h)(0x53E43E26)
-I (..\..\..\Software\Include\nrf51.h)(0x53E43E2F)
-I (C:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x50062982)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x50595C8C)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x4FDA945C)
-I (..\..\..\Software\Include\system_nrf51.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf51_bitfields.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf51_deprecated.h)(0x53E43E2F)
-I (..\..\..\Software\Include\xprintf.h)(0x53E43E2F)
-I (..\..\..\Software\Include\mma8452q.h)(0x53E43E2F)
-I (C:\Keil\ARM\ARMCC\bin\..\include\math.h)(0x4EB0D288)
-F (..\..\..\Software\Source\AK8963C\ak8963.c)(0x53E43E2B)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --asm --interleave --asm_dir ".\\list\\" -I..\..\..\Software\Include --c99 -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Device\Nordic\nRF51822\Include -DNRF51 -DBOARD_PCA10001 -DNRF51_DBG -o ".\output\ak8963.o" --list_dir ".\\list\\" --list --omf_browse ".\output\ak8963.crf" --depend ".\output\ak8963.d")
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x4EB0D284)
-I (..\..\..\Software\Include\twi_master.h)(0x53E43E2F)
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdbool.h)(0x4EB0D288)
-I (..\..\..\Software\Include\nrf_delay.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf.h)(0x53E43E2F)
-I (..\..\..\Software\Include\compiler_abstraction.h)(0x53E43E26)
-I (..\..\..\Software\Include\nrf51.h)(0x53E43E2F)
-I (C:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x50062982)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x50595C8C)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x4FDA945C)
-I (..\..\..\Software\Include\system_nrf51.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf51_bitfields.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf51_deprecated.h)(0x53E43E2F)
-I (..\..\..\Software\Include\xprintf.h)(0x53E43E2F)
-I (..\..\..\Software\Include\mpu6050.h)(0x53E43E2F)
-I (C:\Keil\ARM\ARMCC\bin\..\include\math.h)(0x4EB0D288)
-I (..\..\..\Software\Include\ak8963.h)(0x53E43E2B)
-I (..\..\..\Software\Include\mma8452q.h)(0x53E43E2F)
-F (..\..\..\Software\Source\oled\oled.c)(0x53E43E2B)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --asm --interleave --asm_dir ".\\list\\" -I..\..\..\Software\Include --c99 -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Device\Nordic\nRF51822\Include -DNRF51 -DBOARD_PCA10001 -DNRF51_DBG -o ".\output\oled.o" --list_dir ".\\list\\" --list --omf_browse ".\output\oled.crf" --depend ".\output\oled.d")
-I (..\..\..\Software\Include\twi_master.h)(0x53E43E2F)
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdbool.h)(0x4EB0D288)
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x4EB0D284)
-I (..\..\..\Software\Include\nrf_delay.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf.h)(0x53E43E2F)
-I (..\..\..\Software\Include\compiler_abstraction.h)(0x53E43E26)
-I (..\..\..\Software\Include\nrf51.h)(0x53E43E2F)
-I (C:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x50062982)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x50595C8C)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x4FDA945C)
-I (..\..\..\Software\Include\system_nrf51.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf51_bitfields.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf51_deprecated.h)(0x53E43E2F)
-I (..\..\..\Software\Include\oled.h)(0x53E43E2F)
-I (..\..\..\Software\Include\font.h)(0x53E43E27)
-I (..\..\..\Software\Include\Photo_Show.h)(0x53E43E2F)
-F (..\..\..\Software\Source\step_count\step_count.c)(0x53E43E2B)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --asm --interleave --asm_dir ".\\list\\" -I..\..\..\Software\Include --c99 -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Device\Nordic\nRF51822\Include -DNRF51 -DBOARD_PCA10001 -DNRF51_DBG -o ".\output\step_count.o" --list_dir ".\\list\\" --list --omf_browse ".\output\step_count.crf" --depend ".\output\step_count.d")
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdio.h)(0x4EB0D286)
-I (C:\Keil\ARM\ARMCC\bin\..\include\math.h)(0x4EB0D288)
-I (..\..\..\Software\Include\nrf_delay.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf.h)(0x53E43E2F)
-I (..\..\..\Software\Include\compiler_abstraction.h)(0x53E43E26)
-I (..\..\..\Software\Include\nrf51.h)(0x53E43E2F)
-I (C:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x50062982)
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x4EB0D284)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x50595C8C)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x4FDA945C)
-I (..\..\..\Software\Include\system_nrf51.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf51_bitfields.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf51_deprecated.h)(0x53E43E2F)
-I (..\..\..\Software\Include\xprintf.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf_gpio.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf_error.h)(0x53E43E2F)
-I (..\..\..\Software\Include\step_count.h)(0x53E43E2F)
-I (..\..\..\Software\Include\bma180.h)(0x53E43E2B)
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdbool.h)(0x4EB0D288)
-I (..\..\..\Software\Include\mma8452q.h)(0x53E43E2F)
-I (..\..\..\Software\Include\system_info_storage.h)(0x53E43E2F)
-F (..\..\..\Software\Source\INT_handle\INT_handle.c)(0x53E43E2B)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --asm --interleave --asm_dir ".\\list\\" -I..\..\..\Software\Include --c99 -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Device\Nordic\nRF51822\Include -DNRF51 -DBOARD_PCA10001 -DNRF51_DBG -o ".\output\int_handle.o" --list_dir ".\\list\\" --list --omf_browse ".\output\int_handle.crf" --depend ".\output\int_handle.d")
-I (..\..\..\Software\Include\INT_handle.h)(0x53E43E2F)
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdbool.h)(0x4EB0D288)
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x4EB0D284)
-I (..\..\..\Software\Include\nrf.h)(0x53E43E2F)
-I (..\..\..\Software\Include\compiler_abstraction.h)(0x53E43E26)
-I (..\..\..\Software\Include\nrf51.h)(0x53E43E2F)
-I (C:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x50062982)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x50595C8C)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x4FDA945C)
-I (..\..\..\Software\Include\system_nrf51.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf51_bitfields.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf51_deprecated.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf_gpio.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf_soc.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf_svc.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf_error_soc.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf_error.h)(0x53E43E2F)
-I (..\..\..\Software\Include\xprintf.h)(0x53E43E2F)
-I (..\..\..\Software\Include\app_util.h)(0x53E43E2B)
-I (..\..\..\Software\Include\app_error.h)(0x53E43E2B)
-I (..\..\..\Software\Include\system_work_handle.h)(0x53E43E2F)
-I (..\..\..\Software\Include\system_info_storage.h)(0x53E43E2F)
-I (..\..\..\Software\Include\twi_master.h)(0x53E43E2F)
-I (..\..\..\Software\Include\step_count.h)(0x53E43E2F)
-I (..\..\..\Software\Include\pwr_ctrl.h)(0x53E43E2F)
-I (..\..\..\Software\Include\boards.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_startup.h)(0x53E43E2B)
-I (C:\Keil\ARM\ARMCC\bin\..\include\string.h)(0x4EB0D286)
-I (..\..\..\Software\Include\nordic_common.h)(0x53E43E2F)
-I (..\..\..\Software\Include\ble.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_ranges.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_types.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_gap.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_l2cap.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_err.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_gatt.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_gattc.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_gatts.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_hci.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_srv_common.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_advdata.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_conn_params.h)(0x53E43E2B)
-I (..\..\..\Software\Include\app_scheduler.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_stack_handler.h)(0x53E43E2B)
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdlib.h)(0x4EB0D284)
-I (..\..\..\Software\Include\nrf_sdm.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf_error_sdm.h)(0x53E43E2F)
-I (..\..\..\Software\Include\app_timer.h)(0x53E43E2B)
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdio.h)(0x4EB0D286)
-I (..\..\..\Software\Include\ble_error_log.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_nrf6310_pins.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_flash.h)(0x53E43E2B)
-I (..\..\..\Software\Include\app_gpiote.h)(0x53E43E2B)
-I (..\..\..\Software\Include\app_button.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_debug_assert_handler.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_nus.h)(0x53E43E2B)
-I (..\..\..\Software\Include\nrf_delay.h)(0x53E43E2F)
-I (..\..\..\Software\Include\simple_uart.h)(0x53E43E2F)
-I (..\..\..\Software\Include\bma180.h)(0x53E43E2B)
-F (..\..\..\Software\Source\sys_work_handle\flash_ctrl.c)(0x53E43E2B)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --asm --interleave --asm_dir ".\\list\\" -I..\..\..\Software\Include --c99 -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Device\Nordic\nRF51822\Include -DNRF51 -DBOARD_PCA10001 -DNRF51_DBG -o ".\output\flash_ctrl.o" --list_dir ".\\list\\" --list --omf_browse ".\output\flash_ctrl.crf" --depend ".\output\flash_ctrl.d")
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdbool.h)(0x4EB0D288)
-I (..\..\..\Software\Include\nrf.h)(0x53E43E2F)
-I (..\..\..\Software\Include\compiler_abstraction.h)(0x53E43E26)
-I (..\..\..\Software\Include\nrf51.h)(0x53E43E2F)
-I (C:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x50062982)
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x4EB0D284)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x50595C8C)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x4FDA945C)
-I (..\..\..\Software\Include\system_nrf51.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf51_bitfields.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf51_deprecated.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf_gpio.h)(0x53E43E2F)
-I (..\..\..\Software\Include\boards.h)(0x53E43E2B)
-I (..\..\..\Software\Include\flash_ctrl.h)(0x53E43E27)
-I (..\..\..\Software\Include\xprintf.h)(0x53E43E2F)
-F (..\..\..\Software\Source\sys_work_handle\pwr_ctrl.c)(0x53E43E2B)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --asm --interleave --asm_dir ".\\list\\" -I..\..\..\Software\Include --c99 -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Device\Nordic\nRF51822\Include -DNRF51 -DBOARD_PCA10001 -DNRF51_DBG -o ".\output\pwr_ctrl.o" --list_dir ".\\list\\" --list --omf_browse ".\output\pwr_ctrl.crf" --depend ".\output\pwr_ctrl.d")
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x4EB0D284)
-I (C:\Keil\ARM\ARMCC\bin\..\include\string.h)(0x4EB0D286)
-I (..\..\..\Software\Include\nordic_common.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf.h)(0x53E43E2F)
-I (..\..\..\Software\Include\compiler_abstraction.h)(0x53E43E26)
-I (..\..\..\Software\Include\nrf51.h)(0x53E43E2F)
-I (C:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x50062982)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x50595C8C)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x4FDA945C)
-I (..\..\..\Software\Include\system_nrf51.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf51_bitfields.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf51_deprecated.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf_gpio.h)(0x53E43E2F)
-I (..\..\..\Software\Include\pwr_ctrl.h)(0x53E43E2F)
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdbool.h)(0x4EB0D288)
-I (..\..\..\Software\Include\xprintf.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf_delay.h)(0x53E43E2F)
-F (..\..\..\Software\Source\sys_work_handle\system_work_handle.c)(0x53E43E2B)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --asm --interleave --asm_dir ".\\list\\" -I..\..\..\Software\Include --c99 -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Device\Nordic\nRF51822\Include -DNRF51 -DBOARD_PCA10001 -DNRF51_DBG -o ".\output\system_work_handle.o" --list_dir ".\\list\\" --list --omf_browse ".\output\system_work_handle.crf" --depend ".\output\system_work_handle.d")
-I (..\..\..\Software\Include\system_work_handle.h)(0x53E43E2F)
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdbool.h)(0x4EB0D288)
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x4EB0D284)
-I (..\..\..\Software\Include\system_info_storage.h)(0x53E43E2F)
-I (..\..\..\Software\Include\twi_master.h)(0x53E43E2F)
-I (..\..\..\Software\Include\step_count.h)(0x53E43E2F)
-I (..\..\..\Software\Include\pwr_ctrl.h)(0x53E43E2F)
-I (..\..\..\Software\Include\boards.h)(0x53E43E2B)
-I (..\..\..\Software\Include\nrf_delay.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf.h)(0x53E43E2F)
-I (..\..\..\Software\Include\compiler_abstraction.h)(0x53E43E26)
-I (..\..\..\Software\Include\nrf51.h)(0x53E43E2F)
-I (C:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x50062982)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x50595C8C)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x4FDA945C)
-I (..\..\..\Software\Include\system_nrf51.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf51_bitfields.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf51_deprecated.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf_gpio.h)(0x53E43E2F)
-I (..\..\..\Software\Include\INT_handle.h)(0x53E43E2F)
-I (..\..\..\Software\Include\ble_startup.h)(0x53E43E2B)
-I (C:\Keil\ARM\ARMCC\bin\..\include\string.h)(0x4EB0D286)
-I (..\..\..\Software\Include\nordic_common.h)(0x53E43E2F)
-I (..\..\..\Software\Include\app_error.h)(0x53E43E2B)
-I (..\..\..\Software\Include\nrf_error.h)(0x53E43E2F)
-I (..\..\..\Software\Include\ble.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_ranges.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_types.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_gap.h)(0x53E43E2B)
-I (..\..\..\Software\Include\nrf_svc.h)(0x53E43E2F)
-I (..\..\..\Software\Include\ble_l2cap.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_err.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_gatt.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_gattc.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_gatts.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_hci.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_srv_common.h)(0x53E43E2B)
-I (..\..\..\Software\Include\app_util.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_advdata.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_conn_params.h)(0x53E43E2B)
-I (..\..\..\Software\Include\app_scheduler.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_stack_handler.h)(0x53E43E2B)
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdlib.h)(0x4EB0D284)
-I (..\..\..\Software\Include\nrf_sdm.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf_soc.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf_error_soc.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf_error_sdm.h)(0x53E43E2F)
-I (..\..\..\Software\Include\app_timer.h)(0x53E43E2B)
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdio.h)(0x4EB0D286)
-I (..\..\..\Software\Include\ble_error_log.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_nrf6310_pins.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_flash.h)(0x53E43E2B)
-I (..\..\..\Software\Include\app_gpiote.h)(0x53E43E2B)
-I (..\..\..\Software\Include\app_button.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_debug_assert_handler.h)(0x53E43E2B)
-I (..\..\..\Software\Include\ble_nus.h)(0x53E43E2B)
-I (..\..\..\Software\Include\simple_uart.h)(0x53E43E2F)
-I (..\..\..\Software\Include\xprintf.h)(0x53E43E2F)
-I (..\..\..\Software\Include\flash_ctrl.h)(0x53E43E27)
-I (..\..\..\Software\Include\mma8452q.h)(0x53E43E2F)
-F (..\..\..\Software\Source\sys_info_storage\system_info_storage.c)(0x53E43E2B)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --asm --interleave --asm_dir ".\\list\\" -I..\..\..\Software\Include --c99 -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Device\Nordic\nRF51822\Include -DNRF51 -DBOARD_PCA10001 -DNRF51_DBG -o ".\output\system_info_storage.o" --list_dir ".\\list\\" --list --omf_browse ".\output\system_info_storage.crf" --depend ".\output\system_info_storage.d")
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x4EB0D284)
-I (C:\Keil\ARM\ARMCC\bin\..\include\stdbool.h)(0x4EB0D288)
-I (C:\Keil\ARM\ARMCC\bin\..\include\string.h)(0x4EB0D286)
-I (..\..\..\Software\Include\system_info_storage.h)(0x53E43E2F)
-I (..\..\..\Software\Include\flash_ctrl.h)(0x53E43E27)
-I (..\..\..\Software\Include\nrf51.h)(0x53E43E2F)
-I (C:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x50062982)
-I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x50595C8C)
-I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x4FDA945C)
-I (..\..\..\Software\Include\system_nrf51.h)(0x53E43E2F)
-I (..\..\..\Software\Include\nrf51_bitfields.h)(0x53E43E2F)
-I (..\..\..\Software\Include\xprintf.h)(0x53E43E2F)

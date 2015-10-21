@@ -1,5 +1,0 @@
--c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I.\Include --c99 
--I C:\Keil\ARM\RV31\INC 
--I C:\Keil\ARM\CMSIS\Include 
--I C:\Keil\ARM\Device\Nordic\nRF51822\Include 
--DNRF51 -DBOARD_PCA10001 -o ".\output\nrf_delay.o" --omf_browse ".\output\nrf_delay.crf" --depend ".\output\nrf_delay.d" "Source\nrf_delay\nrf_delay.c"
